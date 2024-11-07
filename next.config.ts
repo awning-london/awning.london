@@ -4,8 +4,8 @@ const nextConfig = {
   images: {
     unoptimized: true, // Disable default image optimization
   },
-  assetPrefix: isProd ? '/your-repository-name/' : '',
-  basePath: isProd ? '/your-repository-name' : '',
+  assetPrefix: isProd ? '/awning.london/' : '',
+  basePath: isProd ? '/awning.london' : '',
   output: 'export'
 };
 
