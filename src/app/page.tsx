@@ -10,7 +10,6 @@ import { List, ListItem } from '@/components/List'
 import { SectionIntro } from '@/components/SectionIntro'
 import { StylizedImage } from '@/components/StylizedImage'
 import { Testimonial } from '@/components/Testimonial'
-import logoPhobiaDark from '@/images/clients/phobia/logo-dark.svg'
 import imageLaptop from '@/images/laptop.jpg'
 import { type CaseStudy, type MDXEntry, loadCaseStudies } from '@/lib/mdx'
 import clsx from 'clsx';
@@ -60,14 +59,26 @@ function CaseStudies({
   return (
     <>
       <SectionIntro
-        title="Harnessing technology for a brighter future"
+        title="Exceptional service beyond compare"
         className="mt-24 sm:mt-32 lg:mt-40"
       >
-        <p>
-          We believe technology is the answer to the world’s greatest
-          challenges. It’s also the cause, so we find ourselves in bit of a
-          catch 22 situation.
-        </p>
+        <div className={clsx(
+          "grid grid-cols-1 gap-10 md:grid-cols-2"
+        )}>
+          <p>
+            - Our craftsmen install high-quality awnings and garage doors to exacting standards.
+          </p>
+          <p>
+            - We use top brands like Weinor, Gibus, and Aluroll, with extensive experience in fitting across London.
+          </p>
+          <p>
+            - From start to finish, we’re here to ensure a smooth, personalized experience.
+          </p>
+          <p>
+            - Customizable awnings with logo options—plus, we’ll beat any comparable UK quote!
+          </p>
+
+        </div>
       </SectionIntro>
       <Container className="mt-16">
         <FadeInStagger className="grid grid-cols-1 gap-8 lg:grid-cols-3">
@@ -190,11 +201,9 @@ export default async function Home() {
 
       <Testimonial
         className="mt-24 sm:mt-32 lg:mt-40"
-        client={{ name: 'Phobia', logo: logoPhobiaDark }}
       >
-        The team at Studio went above and beyond with our onboarding, even
-        finding a way to access the user’s microphone without triggering one of
-        those annoying permission dialogs.
+        Fantastic service! Professional, detail-oriented team. 
+        My awning and garage door look perfect, were installed on time, and at a great price. Highly recommend!
       </Testimonial>
 
       <Services />
