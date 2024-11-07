@@ -13,6 +13,7 @@ import { Testimonial } from '@/components/Testimonial'
 import imageLaptop from '@/images/laptop.jpg'
 import { type CaseStudy, type MDXEntry, loadCaseStudies } from '@/lib/mdx'
 import clsx from 'clsx';
+import Gallary from '@/components/Gallary';
 
 const clients = [
   ['Custom Designs'],
@@ -205,6 +206,8 @@ export default async function Home() {
         Fantastic service! Professional, detail-oriented team. 
         My awning and garage door look perfect, were installed on time, and at a great price. Highly recommend!
       </Testimonial>
+
+      <Gallary />
 
       <Services />
 
