@@ -9,13 +9,13 @@ const navigation = [
   {
     title: 'Work',
     links: [
-      { title: 'FamilyFund', href: '/work/family-fund' },
-      { title: 'Unseal', href: '/work/unseal' },
-      { title: 'Phobia', href: '/work/phobia' },
+      // { title: 'FamilyFund', href: '/work/family-fund' },
+      // { title: 'Unseal', href: '/work/unseal' },
+      // { title: 'Phobia', href: '/work/phobia' },
       {
         title: (
           <>
-            See all <span aria-hidden="true">&rarr;</span>
+            Gallary <span aria-hidden="true">&rarr;</span>
           </>
         ),
         href: '/work',
@@ -26,8 +26,8 @@ const navigation = [
     title: 'Company',
     links: [
       { title: 'About', href: '/about' },
-      { title: 'Process', href: '/process' },
-      { title: 'Blog', href: '/blog' },
+      // { title: 'Process', href: '/process' },
+      // { title: 'Blog', href: '/blog' },
       { title: 'Contact us', href: '/contact' },
     ],
   },
@@ -125,7 +125,7 @@ export function Footer() {
             <Logo />
           </Link>
           <p className="text-sm text-neutral-700">
-            © Studio Agency Inc. {new Date().getFullYear()}
+            © Awning London Inc. {new Date().getFullYear()}
           </p>
         </div>
       </FadeIn>
