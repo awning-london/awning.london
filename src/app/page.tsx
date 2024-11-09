@@ -1,6 +1,4 @@
 import { type Metadata } from 'next'
-import Image from 'next/image'
-import Link from 'next/link'
 
 import { TiTick } from "react-icons/ti";
 import { ContactSection } from '@/components/ContactSection'
@@ -11,11 +9,10 @@ import { SectionIntro } from '@/components/SectionIntro'
 import { StylizedImage } from '@/components/StylizedImage'
 import { Testimonial } from '@/components/Testimonial'
 import awnSample from '@/images/awn.jpg'
-import { type CaseStudy, type MDXEntry, loadCaseStudies } from '@/lib/mdx'
 import clsx from 'clsx';
 import Gallary from '@/components/Gallary';
 
-const clients = [
+const features = [
   ['Custom Designs'],
   ['Range of Fabrics'],
   ['Wind, Shower & Sun Resistant'],
@@ -39,10 +36,10 @@ function Clients() {
             role="list"
             className="mt-10 grid grid-cols-2 gap-x-8 gap-y-10 lg:grid-cols-3 text-white"
           >
-            {clients.map(([client]) => (
-              <li key={client} className={clsx('flex items-center ')}>
+            {features.map(([feature]) => (
+              <li key={feature} className={clsx('flex items-center ')}>
                 <TiTick size={20}/>
-                {client}
+                {feature}
               </li>
             ))}
           </ul>
@@ -52,77 +49,23 @@ function Clients() {
   )
 }
 
-function CaseStudies({
-  caseStudies,
-}: {
-  caseStudies: Array<MDXEntry<CaseStudy>>
-}) {
-  return (
-    <>
-      <SectionIntro
-        title="Exceptional service beyond compare"
-        className="mt-24 sm:mt-32 lg:mt-40"
-      >
-        <div className={clsx(
-          "grid grid-cols-1 gap-10 md:grid-cols-2"
-        )}>
-          <p>
-            - Our craftsmen install high-quality awnings and garage doors to exacting standards.
-          </p>
-          <p>
-            - We use top brands like Weinor, Gibus, and Aluroll, with extensive experience in fitting across London.
-          </p>
-          <p>
-            - From start to finish, we’re here to ensure a smooth, personalized experience.
-          </p>
-          <p>
-            - Customizable awnings with logo options—plus, we’ll beat any comparable UK quote!
-          </p>
+{/* <div className={clsx(
+  "grid grid-cols-1 gap-10 md:grid-cols-2"
+)}>
+  <p>
+    - Our craftsmen install high-quality awnings and garage doors to exacting standards.
+  </p>
+  <p>
+    - We use top brands like Weinor, Gibus, and Aluroll, with extensive experience in fitting across London.
+  </p>
+  <p>
+    - From start to finish, we’re here to ensure a smooth, personalized experience.
+  </p>
+  <p>
+    - Customizable awnings with logo options—plus, we’ll beat any comparable UK quote!
+  </p>
 
-        </div>
-      </SectionIntro>
-      <Container className="mt-16">
-        <FadeInStagger className="grid grid-cols-1 gap-8 lg:grid-cols-3">
-          {caseStudies.map((caseStudy) => (
-            <FadeIn key={caseStudy.href} className="flex">
-              <article className="relative flex w-full flex-col rounded-3xl p-6 ring-1 ring-neutral-950/5 transition hover:bg-neutral-50 sm:p-8">
-                <h3>
-                  <Link href={caseStudy.href}>
-                    <span className="absolute inset-0 rounded-3xl" />
-                    <Image
-                      src={caseStudy.logo}
-                      alt={caseStudy.client}
-                      className="h-16 w-16"
-                      unoptimized
-                    />
-                  </Link>
-                </h3>
-                <p className="mt-6 flex gap-x-2 text-sm text-neutral-950">
-                  <time
-                    dateTime={caseStudy.date.split('-')[0]}
-                    className="font-semibold"
-                  >
-                    {caseStudy.date.split('-')[0]}
-                  </time>
-                  <span className="text-neutral-300" aria-hidden="true">
-                    /
-                  </span>
-                  <span>Case study</span>
-                </p>
-                <p className="mt-6 font-display text-2xl font-semibold text-neutral-950">
-                  {caseStudy.title}
-                </p>
-                <p className="mt-4 text-base text-neutral-600">
-                  {caseStudy.description}
-                </p>
-              </article>
-            </FadeIn>
-          ))}
-        </FadeInStagger>
-      </Container>
-    </>
-  )
-}
+</div> */}
 
 function Services() {
   return (
@@ -178,7 +121,6 @@ export const metadata: Metadata = {
 }
 
 export default async function Home() {
-  const caseStudies = (await loadCaseStudies()).slice(0, 3)
 
   return (
     <>
@@ -194,8 +136,6 @@ export default async function Home() {
       </Container>
 
       <Clients />
-
-      <CaseStudies caseStudies={caseStudies} />
 
       <Testimonial
         className="mt-24 sm:mt-32 lg:mt-40"
