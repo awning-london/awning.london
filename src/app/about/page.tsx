@@ -161,7 +161,7 @@ import { loadArticles } from '@/lib/mdx'
 export const metadata: Metadata = {
   title: 'About Us',
   description:
-    'We believe that our strength lies in our collaborative approach, which puts our clients at the center of everything we do.',
+    'Creating Comfort and Style Outdoors.',
 }
 
 export default async function About() {
@@ -171,42 +171,24 @@ export default async function About() {
     <>
       <PageIntro eyebrow="About us" title="Our strength is collaboration">
         <p>
-          We believe that our strength lies in our collaborative approach, which
-          puts our clients at the center of everything we do.
+          At Awning London, we specialize in crafting high-quality,
+          durable awning solutions that enhance both the functionality and aesthetics of outdoor spaces. 
+          Based in London, we understand the unique needs of our community, 
+          providing tailored shading options that offer comfort, protection, and style.
         </p>
         <div className="mt-10 max-w-2xl space-y-6 text-base">
           <p>
-            Studio was started by three friends who noticed that developer
-            studios were charging clients double what an in-house team would
-            cost. Since the beginning, we have been committed to doing things
-            differently by charging triple instead.
+          Founded with a commitment to quality and customer satisfaction, we have become a trusted name in the industry. 
+          Our range includes retractable, motorized, and fixed awnings in various designs and materials to suit residential, 
+          commercial, and industrial spaces. Whether you’re looking to create a cozy outdoor area for your home or a stylish seating space for your business, our team is dedicated to helping you find the perfect solution.
           </p>
           <p>
-            At Studio, we’re more than just colleagues — we’re a family. This
-            means we pay very little and expect people to work late. We want our
-            employees to bring their whole selves to work. In return, we just
-            ask that they keep themselves there until at least 6:30pm.
+          Our approach is centered around collaboration, quality craftsmanship, and personalized service. We guide our clients from consultation through installation, ensuring that each project is tailored to their vision and built to last. 
+          At Awning London, our mission is to bring comfort, shade, 
+          and beauty to every space we touch.
           </p>
         </div>
       </PageIntro>
-      {/* <Container className="mt-16">
-        <StatList>
-          <StatListItem value="35" label="Underpaid employees" />
-          <StatListItem value="52" label="Placated clients" />
-          <StatListItem value="$25M" label="Invoices billed" />
-        </StatList>
-      </Container>
-
-      <Culture />
-
-      <Team /> */}
-
-      <PageLinks
-        className="mt-24 sm:mt-32 lg:mt-40"
-        title="From the blog"
-        intro="Our team of experienced designers and developers has just one thing on their mind; working on your ideas to draw a smile on the face of your users worldwide. From conducting Brand Sprints to UX Design."
-        pages={blogArticles}
-      />
 
       <ContactSection />
     </>
