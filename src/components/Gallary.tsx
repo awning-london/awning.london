@@ -26,29 +26,32 @@ export default function Gallary() {
   return (
     <div className="grid grid-cols-2 md:grid-cols-3 gap-4 my-20 w-5/6 m-auto">
         <div className="grid gap-4">
-            {gallary_col1.map(img => <>
+            {gallary_col1.map((img, key) => <>
                 <Image 
                     src={img}
                     alt='awning-image'
                     className='h-auto max-w-full rounded-lg grayscale hover:grayscale-0 transition'
+                    key={key}
                 />
             </>)}
         </div>
         <div className="grid gap-4">
-            {gallary_col2.map(img => <>
+            {gallary_col2.map((img, key) => <>
                     <Image 
                         src={img}
                         alt='awning-image'
                         className='h-auto max-w-full rounded-lg grayscale hover:grayscale-0 transition'
+                        key={key}
                     />
             </>)}
         </div>
         <div className="grid gap-4">
-            {gallary_col3.map(img => <>
+            {gallary_col3.map((img, key) => <>
                     <Image 
                         src={img}
                         alt='awning-image'
                         className='h-auto max-w-full rounded-lg grayscale hover:grayscale-0 transition'
+                        key={key}
                     />
             </>)}
         </div>
