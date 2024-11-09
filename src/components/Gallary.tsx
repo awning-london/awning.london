@@ -24,7 +24,7 @@ export default function Gallary() {
     ]
 
   return (
-    <div className="grid grid-cols-2 md:grid-cols-3 gap-4 my-20 w-5/6 m-auto">
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 my-20 w-1/2 m-auto">
         <div className="grid gap-4">
             {gallary_col1.map((img, key) => <>
                 <Image 

@@ -2,6 +2,7 @@ import { type Metadata } from 'next'
 
 import { ContactSection } from '@/components/ContactSection'
 import { PageIntro } from '@/components/PageIntro'
+import Gallary from '@/components/Gallary'
 
 
 export const metadata: Metadata = {
@@ -24,7 +25,7 @@ export default async function Work() {
           the same five projects we’ve been developing for the past decade.
         </p>
       </PageIntro>
-
+      <Gallary />
 
       <ContactSection />
     </>
