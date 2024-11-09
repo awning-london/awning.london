@@ -1,17 +1,27 @@
+# Awning Company Website - London
+
+This project is a modern, responsive website built with Next.js, designed for an awning company based in London. The site provides a platform to showcase various awning products and services, making it easy for clients to explore options for enhancing their outdoor spaces.
+
+## Key Features:
+
+- Home Page: Introduces the company’s products and services with a visually appealing layout.
+
+- About Us: Shares the company’s story, mission, and values, emphasizing its commitment to quality and customer satisfaction.
+
+- Portfolio Section: Highlights previous projects, showcasing the company’s craftsmanship and design options.
+
+- Contact Us: Allows potential clients to reach out for consultations or further information.
+The website is fully optimized for SEO, fast-loading, and responsive across devices. Hosted under a GitHub organization, it uses CDN configurations for enhanced performance and aims to create an engaging, user-friendly experience for visitors.
+
+This project is part of an initiative to establish a strong online presence for the company, reaching a broader audience while highlighting the company’s expertise in the awning industry.
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
-
 First, run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
