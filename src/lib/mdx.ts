@@ -1,3 +1,5 @@
+// "use client"
+
 import { type ImageProps } from 'next/image'
 import glob from 'fast-glob'
 
@@ -9,7 +11,7 @@ async function loadEntries<T extends { date: string }>(
     await Promise.all(
       (await glob('**/page.mdx', { cwd: `src/app/${directory}` })).map(
         async (filename) => {
-          let metadata = (await import(`../app/${directory}/${filename}`))[
+          const metadata = (await import(`../app/${directory}/${filename}`))[
             metaName
           ] as T
           return {
