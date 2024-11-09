@@ -1,8 +1,6 @@
 import { type Metadata } from 'next'
 import { ContactSection } from '@/components/ContactSection'
 import { PageIntro } from '@/components/PageIntro'
-import { PageLinks } from '@/components/PageLinks'
-import { loadArticles } from '@/lib/mdx'
 
 // function Culture() {
 //   return (
@@ -165,7 +163,6 @@ export const metadata: Metadata = {
 }
 
 export default async function About() {
-  const blogArticles = (await loadArticles()).slice(0, 2)
 
   return (
     <>
