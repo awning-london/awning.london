@@ -11,6 +11,7 @@ import { Testimonial } from '@/components/Testimonial'
 import awnSample from '@/images/awn.jpg'
 import clsx from 'clsx';
 import Gallary from '@/components/Gallary';
+import SwiperSlides from '@/components/SwiperSlides'
 
 const features = [
   ['Custom Designs'],
@@ -134,9 +135,11 @@ export default async function Home() {
           </p>
         </FadeIn>
       </Container>
+      
+      <SwiperSlides/>
 
       <Clients />
-
+      
       <Testimonial
         className="mt-24 sm:mt-32 lg:mt-40"
       >
