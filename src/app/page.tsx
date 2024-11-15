@@ -147,7 +147,9 @@ export default async function Home() {
         My awning and garage door look perfect, were installed on time, and at a great price. Highly recommend!
       </Testimonial>
 
-      <Gallary />
+      <Container>
+        <Gallary />
+      </Container>
 
       <Services />
 
