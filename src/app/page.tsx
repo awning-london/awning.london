@@ -50,24 +50,6 @@ function Clients() {
   )
 }
 
-{/* <div className={clsx(
-  "grid grid-cols-1 gap-10 md:grid-cols-2"
-)}>
-  <p>
-    - Our craftsmen install high-quality awnings and garage doors to exacting standards.
-  </p>
-  <p>
-    - We use top brands like Weinor, Gibus, and Aluroll, with extensive experience in fitting across London.
-  </p>
-  <p>
-    - From start to finish, we’re here to ensure a smooth, personalized experience.
-  </p>
-  <p>
-    - Customizable awnings with logo options—plus, we’ll beat any comparable UK quote!
-  </p>
-
-</div> */}
-
 function Services() {
   return (
     <>
@@ -117,8 +99,9 @@ function Services() {
 }
 
 export const metadata: Metadata = {
+  title: 'Awning London',
   description:
-    'We are a development studio working at the intersection of design and technology.',
+    '',
 }
 
 export default async function Home() {
