@@ -93,14 +93,14 @@ import { SocialMedia } from '@/components/SocialMedia'
 function ContactDetails() {
   return (
     <FadeIn>
-      <h2 className="font-display text-base font-semibold text-neutral-950">
+      {/* <h2 className="font-display text-base font-semibold text-neutral-950">
         Our offices
       </h2>
       <p className="mt-6 text-base text-neutral-600">
         Ready to transform your outdoor space? Our team is here to help with any questions about our awning solutions,
         customization options, or the installation process. 
         Contact us today for a free consultation and let’s bring your vision to life!
-      </p>
+      </p> */}
 
       {/* <Offices className="mt-10 grid grid-cols-1 gap-8 sm:grid-cols-2" /> */}
 
