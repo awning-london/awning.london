@@ -101,7 +101,7 @@ function Services() {
 export const metadata: Metadata = {
   title: 'Awning London',
   description:
-    '',
+    'test',
 }
 
 export default async function Home() {
