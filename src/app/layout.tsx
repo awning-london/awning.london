@@ -1,15 +1,10 @@
-import { type Metadata } from 'next'
 
 import { RootLayout } from '@/components/RootLayout'
 import { GoogleAnalytics } from '@next/third-parties/google'
 import '@/styles/tailwind.css'
+import { rootMetadata } from '@/lib/root-metadata';
 
-export const metadata: Metadata = {
-  title: {
-    template: '%s - Awning London',
-    default: 'Awning - Based in London',
-  },
-}
+export const metadata = rootMetadata;
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
