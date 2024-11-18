@@ -18,7 +18,7 @@ function ContactDetails() {
         </h2>
         <dl className="mt-6 grid grid-cols-1 gap-8 text-sm sm:grid-cols-2">
           {[
-            ['Contact', 'awning.london@gmail.com'],
+            ['Contact', 'info@awning.london'],
           ].map(([label, email]) => (
             <div key={email}>
               <dt className="font-semibold text-neutral-950">{label}</dt>
@@ -41,7 +41,7 @@ function ContactDetails() {
         </h2>
         <dl className="mt-6 grid grid-cols-1 gap-8 text-sm sm:grid-cols-2">
           {[
-            ['Contact', '+44 7365 571149'],
+            ['Contact', '+44 7777 602125'],
           ].map(([label, phone]) => (
             <div key={phone}>
               <dt className="font-semibold text-neutral-950">{label}</dt>
