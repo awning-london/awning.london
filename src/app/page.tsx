@@ -101,7 +101,7 @@ function Services() {
 export const metadata: Metadata = {
   title: 'Awning London',
   description:
-    'test',
+    'Discover premium awning solutions in London. Awning London offers high-quality retractable, fixed, and motorized awnings to enhance your outdoor spaces with style and comfort. Contact us today!',
 }
 
 export default async function Home() {
