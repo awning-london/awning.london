@@ -15,7 +15,13 @@ import Awn12 from '@/images/work/a7.jpg'
 import Awn13 from '@/images/work/a8.jpg'
 import Awn14 from '@/images/work/a9.jpg'
 import Awn15 from '@/images/work/a10.jpg'
-
+import Awn16 from '@/images/work/a11.jpg'
+import Awn17 from '@/images/work/a12.jpg'
+import Awn18 from '@/images/work/a13.jpg'
+import Awn19 from '@/images/work/a14.jpg'
+import Awn20 from '@/images/work/a15.jpg'
+import Awn21 from '@/images/work/a16.jpg'
+import Awn22 from '@/images/work/a17.jpg'
 
 export default function Gallary() {
 
@@ -35,6 +41,13 @@ export default function Gallary() {
         Awn13,
         Awn14,
         Awn15,
+        Awn16,
+        Awn17,
+        Awn18,
+        Awn19,
+        Awn20,
+        Awn21,
+        Awn22,
     ]
 
   return (
