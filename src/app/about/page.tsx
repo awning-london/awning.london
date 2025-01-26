@@ -4,7 +4,7 @@ import { PageIntro } from '@/components/PageIntro'
 
 // function Culture() {
 //   return (
-//     <div className="mt-24 rounded-4xl bg-neutral-950 py-24 sm:mt-32 lg:mt-40 lg:py-32">
+//     <div className="mt-24 rounded-4xl bg-sky-600 py-24 sm:mt-32 lg:mt-40 lg:py-32">
 //       <SectionIntro
 //         eyebrow="Our culture"
 //         title="Balance your passion with your passion for life."
@@ -109,14 +109,14 @@ import { PageIntro } from '@/components/PageIntro'
 
 // function Team() {
 //   return (
-//     <Container className="mt-24 sm:mt-32 lg:mt-40">
+//     <Container className="mt-10 sm:mt-12 md:mt-20">
 //       <div className="space-y-24">
 //         {team.map((group) => (
 //           <FadeInStagger key={group.title}>
 //             <Border as={FadeIn} />
 //             <div className="grid grid-cols-1 gap-6 pt-12 sm:pt-16 lg:grid-cols-4 xl:gap-8">
 //               <FadeIn>
-//                 <h2 className="font-display text-2xl font-semibold text-neutral-950">
+//                 <h2 className="font-display text-2xl font-semibold text-sky-950">
 //                   {group.title}
 //                 </h2>
 //               </FadeIn>
@@ -128,7 +128,7 @@ import { PageIntro } from '@/components/PageIntro'
 //                   {group.people.map((person) => (
 //                     <li key={person.name}>
 //                       <FadeIn>
-//                         <div className="group relative overflow-hidden rounded-3xl bg-neutral-100">
+//                         <div className="group relative overflow-hidden rounded-3xl bg-sky-100">
 //                           <Image
 //                             alt=""
 //                             {...person.image}
@@ -157,9 +157,9 @@ import { PageIntro } from '@/components/PageIntro'
 // }
 
 export const metadata: Metadata = {
-  title: 'About Us',
+  title: 'About Us | Awning London',
   description:
-    'Creating Comfort and Style Outdoors.',
+    'Awning London is a leading provider of high-quality, durable awning solutions in London. We specialize in crafting custom-designed, stylish awnings that enhance the functionality and aesthetics of outdoor spaces.',
 }
 
 export default async function About() {

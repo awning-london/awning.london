@@ -24,14 +24,14 @@ export default function Gallary() {
     ]
 
   return (
-    <div className="grid grid-cols-3 md:grid-cols-2 lg:grid-cols-3 gap-4 my-20 w-full m-auto">
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2 my-8 w-full m-auto">
         <div className="grid gap-4">
             {gallary_col1.map((img, index) => <>
                 <Image 
                     key={index}
                     src={img}
                     alt='awning-image'
-                    className='h-auto max-w-full rounded-lg grayscale hover:grayscale-0 transition'
+                    className='h-auto max-w-full rounded-3xl grayscale hover:grayscale-0 transition'
                 />
             </>)}
         </div>
@@ -41,7 +41,7 @@ export default function Gallary() {
                         key={index}
                         src={img}
                         alt='awning-image'
-                        className='h-auto max-w-full rounded-lg grayscale hover:grayscale-0 transition'
+                        className='h-auto max-w-full rounded-3xl grayscale hover:grayscale-0 transition'
                     />
             </>)}
         </div>
@@ -51,7 +51,7 @@ export default function Gallary() {
                         key={index}
                         src={img}
                         alt='awning-image'
-                        className='h-auto max-w-full rounded-lg grayscale hover:grayscale-0 transition'
+                        className='h-auto max-w-full rounded-3xl grayscale hover:grayscale-0 transition'
                     />
             </>)}
         </div>

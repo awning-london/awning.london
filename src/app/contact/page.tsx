@@ -12,20 +12,20 @@ import { ContactForm } from './contact-form'
 function ContactDetails() {
   return (
     <FadeIn>
-      <Border className="mt-16 pt-16">
-        <h2 className="font-display text-base font-semibold text-neutral-950">
+      <Border className="mt-4 pt-4">
+        <h2 className="font-display text-base font-semibold text-sky-950">
           Email us
         </h2>
-        <dl className="mt-6 grid grid-cols-1 gap-8 text-sm sm:grid-cols-2">
+        <dl className="mt-2 grid grid-cols-1 gap-8 text-sm sm:grid-cols-2">
           {[
             ['Contact', 'info@awning.london'],
           ].map(([label, email]) => (
             <div key={email}>
-              <dt className="font-semibold text-neutral-950">{label}</dt>
+              <dt className="font-semibold text-sky-950">{label}</dt>
               <dd>
                 <Link
                   href={`mailto:${email}`}
-                  className="text-neutral-600 hover:text-neutral-950"
+                  className="text-sky-700 hover:text-sky-950"
                 >
                   {email}
                 </Link>
@@ -35,20 +35,20 @@ function ContactDetails() {
         </dl>
       </Border>
 
-      <Border className="mt-16 pt-16">
-        <h2 className="font-display text-base font-semibold text-neutral-950">
+      <Border className="mt-4 pt-4">
+        <h2 className="font-display text-base font-semibold text-sky-950">
           Get in touch
         </h2>
-        <dl className="mt-6 grid grid-cols-1 gap-8 text-sm sm:grid-cols-2">
+        <dl className="mt-2 grid grid-cols-1 gap-8 text-sm sm:grid-cols-2">
           {[
             ['Contact', '+44 7777 602125'],
           ].map(([label, phone]) => (
             <div key={phone}>
-              <dt className="font-semibold text-neutral-950">{label}</dt>
+              <dt className="font-semibold text-sky-950">{label}</dt>
               <dd>
                 <Link
                   href={`tel:${phone}`}
-                  className="text-neutral-600 hover:text-neutral-950"
+                  className="text-sky-700 hover:text-sky-950"
                 >
                   {phone}
                 </Link>
@@ -59,8 +59,8 @@ function ContactDetails() {
       </Border>
 
 
-      <Border className="mt-16 pt-16">
-        <h2 className="font-display text-base font-semibold text-neutral-950">
+      <Border className="mt-4 pt-4">
+        <h2 className="font-display text-base font-semibold text-sky-950">
           Follow us
         </h2>
         <SocialMedia className="mt-6" />
@@ -70,8 +70,8 @@ function ContactDetails() {
 }
 
 export const metadata: Metadata = {
-  title: 'Contact Us',
-  description: 'Let’s work together. We can’t wait to hear from you.',
+  title: 'Contact Us | Awning London',
+  description: 'Let’s work together. We can’t wait to hear from you. Get in touch with Awning London for all your awning needs.',
 }
 
 export default function Contact() {
@@ -81,10 +81,10 @@ export default function Contact() {
         <p>We can’t wait to hear from you.</p>
       </PageIntro>
 
-      <Container className="mt-24 sm:mt-32 lg:mt-40">
-        <ContactForm />
-        <div className="grid grid-cols-1 gap-x-8 gap-y-24 lg:grid-cols-2">
+      <Container className="mt-4 sm:mt-12 md:mt-8">
+        <div className="grid grid-cols-1 gap-x-4 gap-y-8 md:grid-cols-2">
           <ContactDetails />
+          <ContactForm />
         </div>
       </Container>
     </>

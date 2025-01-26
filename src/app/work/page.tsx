@@ -7,9 +7,9 @@ import { Container } from '@/components/Container'
 
 
 export const metadata: Metadata = {
-  title: 'Our Work',
+  title: 'Our Work | Awning London',
   description:
-    'We believe in efficiency and maximizing our resources to provide the best value to our clients.',
+    'Explore our portfolio of successful projects, showcasing our expertise in creating functional and stylish awnings for a wide range of clients.',
 }
 
 export default async function Work() {
