@@ -235,7 +235,7 @@ function RootLayoutInner({ children }: { children: React.ReactNode }) {
 
       <motion.div
         layout
-        style={{ borderTopLeftRadius: 40, borderTopRightRadius: 40, borderBottomRightRadius: 40, borderBottomLeftRadius: 40 }}
+        style={{ borderTopLeftRadius: 40, borderTopRightRadius: 40, borderBottomRightRadius: 50, borderBottomLeftRadius: 50 }}
         className="relative flex flex-auto overflow-hidden bg-white pt-4 mx-2 mb-2"
       >
         <motion.div
