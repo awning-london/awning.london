@@ -7,8 +7,8 @@ import { rootMetadata } from '@/lib/root-metadata';
 export const metadata = rootMetadata;
 
 export default function Layout({ children }: { children: React.ReactNode }) {
-  const gaId: string = process.env.GOOGLE_SEARCH_CONSOLE || "undefined";
-  
+  const gaId: string = process.env.GOOGLE_SEARCH_CONSOLE || "G-QKPY5TEZCX";
+
   return (
     /* eslint-disable react/no-unknown-property */
     <html prefix="og:http://ogp.me/ns#" dir="ltr" lang="en" className="h-full bg-neutral-950 text-base antialiased">
