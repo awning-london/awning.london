@@ -4,7 +4,7 @@ import { FadeIn } from '@/components/FadeIn'
 
 export function ContactSection() {
   return (
-    <Container className="mt-8 sm:mt-10 md:mt-12 mx-2">
+    <Container className="mt-8 sm:mt-10 md:mt-12 mx-4 md:mx-4">
       <FadeIn className="-mx-6 rounded-4xl bg-sky-600 px-6 py-8 sm:mx-0 sm:py-16 md:px-12">
         <div className="mx-auto max-w-5xl">
           <div className="max-w-xl">

@@ -28,7 +28,7 @@ export function SectionIntro({
             <>
               <span
                 className={clsx(
-                  'mb-6 block font-display text-base font-semibold',
+                  'mb-2 md:mb-4 block font-display text-base font-semibold',
                   invert ? 'text-white' : 'text-sky-950',
                 )}
               >
@@ -52,7 +52,7 @@ export function SectionIntro({
         {children && (
           <div
             className={clsx(
-              'mt-6 text-xl',
+              'mt-2 md:mt-4 text-base md:text-xl',
               invert ? 'text-sky-300' : 'text-sky-700',
             )}
           >

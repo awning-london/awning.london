@@ -17,13 +17,13 @@ export default function GallaryV2() {
     ]
 
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2 my-8 w-full m-auto">
+    <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-2 my-8 w-full m-auto px-2">
         {gallary_col1.map((img, index) => <>
             <Image 
                 key={index}
                 src={img}
                 alt='Best Awning service & repair with reasonable price in London'
-                className='h-auto max-w-full rounded-3xl grayscale hover:grayscale-0 transition'
+                className='h-auto max-w-full rounded-lg md:rounded-3xl grayscale hover:grayscale-0 transition'
             />
         </>)}
     </div>

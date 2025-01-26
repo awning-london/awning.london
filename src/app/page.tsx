@@ -59,14 +59,14 @@ function Services() {
         className="mt-10 sm:mt-12 md:mt-20"
       >
         <p>
-          As long as those opportunities involve giving us money to re-purpose
-          old projects — we can come up with an endless number of those.
+          We offer a wide range of services to meet your needs, including custom-designed awnings, 
+          retractable awnings, fixed awnings, and motorized awnings.
         </p>
       </SectionIntro>
-      <Container className="mt-8">
+      <Container className="mt-0">
         <div className="lg:flex lg:items-center lg:justify-end">
           <div className="flex justify-center lg:w-1/2 lg:justify-end lg:pr-12">
-            <FadeIn className="w-[33.75rem] flex-none lg:w-[45rem]">
+            <FadeIn className="w-[25rem] md:w-[33.75rem] flex-none lg:w-[45rem]">
               <StylizedImage
                 src={awnSample}
                 sizes="(min-width: 1024px) 41rem, 31rem"
@@ -130,9 +130,7 @@ export default async function Home() {
         My awning and garage door look perfect, were installed on time, and at a great price. Highly recommend!
       </Testimonial>
 
-      <Container>
-        <GallaryV2 />
-      </Container>
+      <GallaryV2 />
 
       <Services />
 
