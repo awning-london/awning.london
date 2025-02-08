@@ -13,6 +13,7 @@ import clsx from 'clsx';
 // import GallaryV2 from '@/components/GallaryV2';
 import SwiperSlides from '@/components/SwiperSlides'
 import Link from 'next/link';
+import CustomLink from '@/components/CustomLink';
 
 const features = [
   ['Custom Designs'],
@@ -109,7 +110,7 @@ export default async function Home() {
 
   return (
     <>
-      <Container className="mt-8 sm:mt-12 md:mt-16 mb-4">
+      <Container className="mt-8 sm:mt-12 md:mt-16 mb-20">
         <FadeIn className="max-w-3xl">
           <h1 className="font-display text-4xl font-medium tracking-tight text-sky-950 [text-wrap:balance] sm:text-5xl">
             Stylish, Durable Awnings for London.
@@ -123,20 +124,14 @@ export default async function Home() {
           </div>
         </FadeIn>
       </Container>
-      
-
-      <Clients />
-      
       <SwiperSlides/>
-      <Testimonial
-        className="mt-6 sm:mt-8 md:mt-12"
-      >
+      
+      <Testimonial className="mt-6 sm:mt-8 md:mt-12">
         Fantastic service! Professional, detail-oriented team. 
         My awning and garage door look perfect, were installed on time, and at a great price. Highly recommend!
       </Testimonial>
-
-      {/* <GallaryV2 /> */}
-
+      <CustomLink />
+      <Clients />
       <Services />
 
       <ContactSection />
