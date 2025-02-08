@@ -10,7 +10,7 @@ import { StylizedImage } from '@/components/StylizedImage'
 import { Testimonial } from '@/components/Testimonial'
 import awnSample from '@/images/awn.jpg'
 import clsx from 'clsx';
-import GallaryV2 from '@/components/GallaryV2';
+// import GallaryV2 from '@/components/GallaryV2';
 import SwiperSlides from '@/components/SwiperSlides'
 import Link from 'next/link';
 
