@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import React from 'react'
 import Awn1 from '@/images/1.jpg'
-import Awn2 from '@/images/2.jpg'
+import Awn2 from '@/images/3.jpg'
 import Awn3 from '@/images/3.jpg'
 import Awn4 from '@/images/4.jpg'
 import Awn5 from '@/images/5.jpg'
@@ -14,7 +14,6 @@ import Awn11 from '@/images/a6.jpg'
 import Awn12 from '@/images/a7.jpg'
 import Awn13 from '@/images/a8.jpg'
 import Awn14 from '@/images/a9.jpg'
-import Awn15 from '@/images/a10.jpg'
 import Awn16 from '@/images/a11.jpg'
 import Awn17 from '@/images/a12.jpg'
 import Awn18 from '@/images/a13.jpg'
@@ -40,7 +39,6 @@ export default function Gallary() {
         Awn12,
         Awn13,
         Awn14,
-        Awn15,
         Awn16,
         Awn17,
         Awn18,
