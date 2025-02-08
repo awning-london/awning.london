@@ -12,6 +12,7 @@ import awnSample from '@/images/awn.jpg'
 import clsx from 'clsx';
 import GallaryV2 from '@/components/GallaryV2';
 import SwiperSlides from '@/components/SwiperSlides'
+import Link from 'next/link';
 
 const features = [
   ['Custom Designs'],
@@ -114,15 +115,19 @@ export default async function Home() {
             Stylish, Durable Awnings for London.
           </h1>
           <p className="mt-2 text-xl text-sky-700">
-            Transform your outdoor space with our high-quality, custom awnings. Designed for elegance and built to last.
+          Elevate your outdoor living with our premium custom awnings in London—meticulously designed for enduring elegance and engineered with high-quality materials to provide lasting durability.
           </p>
+          <div className='my-5'>
+            <Link href={"/contact"} className='text-xl bg-sky-600 text-white rounded-full px-8 py-3 mr-5'>Book</Link>
+            <Link href={"/about"} className='text-xl text-sky-600 bg-white border border-sky-600 rounded-full px-8 py-3'>About</Link>
+          </div>
         </FadeIn>
       </Container>
       
-      <SwiperSlides/>
 
       <Clients />
       
+      <SwiperSlides/>
       <Testimonial
         className="mt-6 sm:mt-8 md:mt-12"
       >
@@ -130,7 +135,7 @@ export default async function Home() {
         My awning and garage door look perfect, were installed on time, and at a great price. Highly recommend!
       </Testimonial>
 
-      <GallaryV2 />
+      {/* <GallaryV2 /> */}
 
       <Services />
 
