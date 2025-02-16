@@ -84,7 +84,7 @@ export default function Custom() {
           <Container key={content.id} className="mt-8 sm:mt-12 md:mt-16 mb-20">
             <div className='flex justify-between items-center flex-col lg:flex-row '>
               <FadeIn className="max-w-3xl gap-5">
-                <h2 className="font-display text-2xl font-medium tracking-tight text-sky-950 [text-wrap:balance] sm:text-5xl">
+                <h2 className="font-display text-xl font-medium tracking-tight text-sky-950 [text-wrap:balance] sm:text-3xl">
                   {content.title}
                 </h2>
                 <p className="mt-2 text-lg text-sky-700 max-w-96">

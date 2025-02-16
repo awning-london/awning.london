@@ -1,5 +1,4 @@
 import { type Metadata } from 'next'
-
 import { TiTick } from "react-icons/ti";
 import { ContactSection } from '@/components/ContactSection'
 import { Container } from '@/components/Container'
@@ -10,10 +9,10 @@ import { StylizedImage } from '@/components/StylizedImage'
 import { Testimonial } from '@/components/Testimonial'
 import awnSample from '@/images/awn.jpg'
 import clsx from 'clsx';
-// import GallaryV2 from '@/components/GallaryV2';
 import SwiperSlides from '@/components/SwiperSlides'
 import Link from 'next/link';
 import CustomLink from '@/components/CustomLink';
+import ScrollButton from '@/components/ScrollButton';
 
 const features = [
   ['Custom Designs'],
@@ -119,8 +118,8 @@ export default async function Home() {
           Elevate your outdoor living with our premium custom awnings in London—meticulously designed for enduring elegance and engineered with high-quality materials to provide lasting durability.
           </p>
           <div className='my-5'>
-            <Link href={"/contact"} className='text-xl bg-sky-600 text-white rounded-full px-8 py-3 mr-5'>Book</Link>
-            <Link href={"/about"} className='text-xl text-sky-600 bg-white border border-sky-600 rounded-full px-8 py-3'>About</Link>
+            <Link href={"/contact"} className='text-xl bg-sky-600 text-white rounded-full px-8 py-3 mr-5 border border-sky-600 hover:bg-white hover:text-sky-600'>Book</Link>
+            <Link href={"/about"} className='text-xl text-sky-600 bg-white border border-sky-600 rounded-full px-8 py-3 hover:bg-sky-600 hover:text-white'>About</Link>
           </div>
         </FadeIn>
       </Container>
@@ -133,8 +132,8 @@ export default async function Home() {
       <CustomLink />
       <Clients />
       <Services />
-
       <ContactSection />
+      <ScrollButton />
     </>
   )
 }
