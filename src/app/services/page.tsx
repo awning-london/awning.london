@@ -1,66 +1,21 @@
-"use client"
 
+
+import React from 'react'
 import { Container } from '@/components/Container'
 import { FadeIn } from '@/components/FadeIn'
 import { StylizedImage } from '@/components/StylizedImage'
 import { Testimonial } from '@/components/Testimonial'
 import awnSample from '@/images/services.jpg'
-import React from 'react'
-import { Autoplay, Navigation, Pagination } from 'swiper/modules'
-import { Swiper, SwiperSlide } from 'swiper/react'
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
-import Link from 'next/link'
-import Image from 'next/image'
+import { Metadata } from 'next'
+import BenefitSlider from '@/components/services/BenefitSlider'
+import AwningType from '@/components/services/AwningType'
+import ContactService from '@/components/services/ContactService'
 
-const benefitsAwning = [
-  {
-    "title": "Shade & Comfort",
-    "desc": [
-      "Blocks harmful UV rays, reducing sun exposure.",
-      "Creates a cooler outdoor environment for relaxation.",
-      "Helps prevent indoor spaces from overheating.",
-    ]
-  },
-  {
-    "title": "Weather Protection",
-    "desc": [
-      "Shields against rain and wind, extending the usability of outdoor spaces.",
-      "Protects outdoor furniture from fading and wear.",
-      "Durable materials ensure long-lasting resistance to harsh weather.",
-    ]
-  },
-  {
-    "title": "Shade & Comfort",
-    "desc": [
-      "Reduces indoor cooling costs by blocking excess sunlight.",
-      "Helps maintain consistent indoor temperatures, lowering air conditioning usage.",
-      "Acts as an eco-friendly home improvement option."
-    ]
-  }
-]
-
-const awningType = [
-  {
-    "title": "Residential Awnings ",
-    "desc": "Enhancing patios, balconies, and outdoor spaces for homes.",
-    "imgSrc": "/images/img11.jpg",
-    "route": "/residential-awning",
-  },
-  {
-    "title": "Custom Awnings",
-    "desc": "Tailored designs, materials, and colors to match any architectural style.",
-    "imgSrc": "/images/img7.jpg",
-    "route": "/custom-awning",
-  },
-  {
-    "title": "Commercial Awnings",
-    "desc": "Custom storefront awnings, branded canopies, and café shades.",
-    "imgSrc": "/images/img14.jpg",
-    "route": "/commercial-awning",
-  },
-]
+export const metadata: Metadata = {
+  title: 'Premium Awning Solutions in London | Custom, Residential & Commercial Awnings',
+  description:
+    'Explore our range of high-quality, stylish awning services at Awning.London. We offer custom, residential, and commercial awnings designed for shade, weather protection, and energy savings. Get your free quote today!',
+}
 
 export default function page() {
   return (
@@ -96,64 +51,10 @@ export default function page() {
             </h2>
           </FadeIn>
         </Container> 
-        <div className='mx-auto max-w-7xl px-2 lg:px-4 mb-20'>
-          <Swiper
-            autoplay={{
-              delay:2000,
-              disableOnInteraction: false,
-            }}
-            pagination={false}
-            modules={[Navigation, Pagination, Autoplay]}
-            onSwiper={swiper => console.log(swiper)}
-            className='w-full rounded-4xl flex justify-center items-center gap-2'
-            breakpoints={{
-              640: {
-                slidesPerView: 1,
-                spaceBetween: 10,
-              },
-              768: {
-                slidesPerView: 2,
-                spaceBetween: 10,
-              },
-              1024: {
-                slidesPerView: 3,
-                spaceBetween: 10,
-              },
-            }}
-          >
-            {benefitsAwning.map((item, index) => (
-              <SwiperSlide key={index}>
-                <div className="bg-sky-50 p-4 block h-64 w-full rounded-4xl">
-                  <h3 className='font-display text-2xl font-medium tracking-tight text-sky-950 [text-wrap:balance] sm:text-3xl'>{item.title}</h3>
-                  <ul className="text-sm gap-5 flex justify-center items-start flex-col text-sky-800">
-                    <li>{item.desc[0]}</li>
-                    <li>{item.desc[1]}</li>
-                    <li>{item.desc[2]}</li>
-                  </ul>
-                </div>
-              </SwiperSlide>
-            ))}
-          </Swiper>
-        </div>
-        <FadeIn className='flex justify-center items-center flex-col mb-20 gap-14 md:flex-row'>
-          {awningType.map((item, index) => (
-            <section key={index} className='flex justify-center items-center gap-10 flex-col md:flex-row'>
-              <div className='max-w-80 ml-5'>
-                <h3 className='pb-2 font-display text-3xl font-medium tracking-tight text-sky-950 [text-wrap:balance] sm:text-4xl'>{item.title}</h3>
-                <p className='pb-5 text-sky-700'>{item.desc}</p>
-                <Link href={'/custom-awning-london'} className='px-8 py-3 border border-sky-600 bg-sky-600 text-white rounded-full hover:bg-white hover:text-sky-600'>Read More</Link>
-              </div>
-              <div>
-                <Image 
-                  className='rounded-4xl md:hidden'
-                  src={item.imgSrc}
-                  width={300}
-                  height={100}
-                  alt='custom-link'/>
-              </div>
-            </section>
-          ))}
-        </FadeIn>
+        <BenefitSlider />
+        <AwningType />
+        <ContactService />
+        
       </>
   )
 }

@@ -1,8 +1,9 @@
-import { Button } from '@/components/Button'
-import { Container } from '@/components/Container'
-import { FadeIn } from '@/components/FadeIn'
+import React from 'react'
+import { Container } from '../Container'
+import { FadeIn } from '../FadeIn'
+import { Button } from '../Button'
 
-export function ContactSection() {
+export default function ContactService() {
   return (
     <Container className="mt-8 sm:mt-10 md:mt-12">
       <FadeIn className="rounded-4xl bg-sky-600 px-6 py-8 sm:mx-0 sm:py-16 md:px-12">
@@ -12,8 +13,8 @@ export function ContactSection() {
               Tell us about your project
             </h2>
             <div className="mt-6 flex">
-              <Button href="/contact" invert>
-                Contact Us
+              <Button href="tel:+44 7777 602125" invert>
+                Get a Free Consult
               </Button>
             </div>
           </div>
