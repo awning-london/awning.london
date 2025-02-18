@@ -41,20 +41,20 @@ export default function page() {
           </div> 
         </FadeIn>
       </Container> 
-        <Testimonial title='Our Awning Services' className="mt-6 sm:mt-8 md:mt-12">
-          At Awning.London, we specialize in designing and installing premium awnings for residential and commercial properties. Whether you&apos;re looking for shade for your garden, a retractable awning for your patio, or a stylish storefront canopy, we have the perfect solution for you.
-        </Testimonial>
-        <Container className="mt-12 sm:mt-14 md:mt-16 mb-10">
-          <FadeIn className="max-w-3xl">
-            <h2 className="font-display text-3xl font-medium tracking-tight text-sky-950 [text-wrap:balance] sm:text-4xl">
-              Benefits of Installing an Awning
-            </h2>
-          </FadeIn>
-        </Container> 
-        <BenefitSlider />
-        <AwningType />
-        <ContactService />
+      <Container className="mt-12 sm:mt-14 md:mt-16 mb-10">
+        <FadeIn className="max-w-3xl">
+          <h2 className="font-display text-3xl font-medium tracking-tight text-sky-950 [text-wrap:balance] sm:text-4xl">
+            Benefits of Installing an Awning
+          </h2>
+        </FadeIn>
+      </Container> 
+      <BenefitSlider />
+      <Testimonial title='Our Awning Services' className="mt-6 sm:mt-8 md:mt-12 mb-20">
+        At Awning.London, we specialize in designing and installing premium awnings for residential and commercial properties. Whether you&apos;re looking for shade for your garden, a retractable awning for your patio, or a stylish storefront canopy, we have the perfect solution for you.
+      </Testimonial>
+      <AwningType />
+      <ContactService />
         
-      </>
+    </>
   )
 }
