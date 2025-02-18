@@ -11,6 +11,8 @@ import { Swiper, SwiperSlide } from 'swiper/react'
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import Link from 'next/link'
+import Image from 'next/image'
 
 const benefitsAwning = [
   {
@@ -39,28 +41,51 @@ const benefitsAwning = [
   }
 ]
 
+const awningType = [
+  {
+    "title": "Residential Awnings ",
+    "desc": "Enhancing patios, balconies, and outdoor spaces for homes.",
+    "imgSrc": "/images/img11.jpg",
+    "route": "/residential-awning",
+  },
+  {
+    "title": "Custom Awnings",
+    "desc": "Tailored designs, materials, and colors to match any architectural style.",
+    "imgSrc": "/images/img7.jpg",
+    "route": "/custom-awning",
+  },
+  {
+    "title": "Commercial Awnings",
+    "desc": "Custom storefront awnings, branded canopies, and café shades.",
+    "imgSrc": "/images/img14.jpg",
+    "route": "/commercial-awning",
+  },
+]
+
 export default function page() {
   return (
     <>
       <Container className="mt-8 sm:mt-12 md:mt-16 mb-20">
-        <FadeIn className="max-w-3xl">
-          <h1 className="font-display text-4xl font-medium tracking-tight text-sky-950 [text-wrap:balance] sm:text-5xl">
-            Premium Awning Solutions for Homes & Businesses
-          </h1>
-          <p className="mt-2 text-xl text-sky-700">
-            Explore our range of high-quality, stylish, and durable awnings, customized to suit any space.
-          </p>
+        <FadeIn className="w-full flex justify-between items-center flex-col md:flex-row">
+          <div className='z-10'>
+            <h1 className="font-display text-4xl font-medium tracking-tight text-sky-950 [text-wrap:balance] sm:text-5xl">
+              Premium Awning Solutions for Homes & Businesses
+            </h1>
+            <p className="mt-2 text-xl text-sky-700">
+              Explore our range of high-quality, stylish, and durable awnings, customized to suit any space.
+            </p>
+          </div>
+          <div className="flex justify-center w-full lg:pr-12 z-0">
+            <FadeIn className="w-full lg:w-full">
+              <StylizedImage
+                src={awnSample}
+                sizes="(min-width: 1024px) 41rem, 31rem"
+                className="justify-center lg:justify-end"
+              />
+            </FadeIn>
+          </div> 
         </FadeIn>
       </Container> 
-      <div className="flex justify-center lg:w-1/2 lg:justify-end lg:pr-12">
-      <FadeIn className="w-[25rem] md:w-[33.75rem] flex-none lg:w-[45rem]">
-        <StylizedImage
-          src={awnSample}
-          sizes="(min-width: 1024px) 41rem, 31rem"
-          className="justify-center lg:justify-end"
-        />
-      </FadeIn>
-      </div> 
         <Testimonial title='Our Awning Services' className="mt-6 sm:mt-8 md:mt-12">
           At Awning.London, we specialize in designing and installing premium awnings for residential and commercial properties. Whether you&apos;re looking for shade for your garden, a retractable awning for your patio, or a stylish storefront canopy, we have the perfect solution for you.
         </Testimonial>
@@ -71,7 +96,7 @@ export default function page() {
             </h2>
           </FadeIn>
         </Container> 
-        <div className='mx-auto max-w-7xl px-2 lg:px-4'>
+        <div className='mx-auto max-w-7xl px-2 lg:px-4 mb-20'>
           <Swiper
             autoplay={{
               delay:2000,
@@ -98,7 +123,7 @@ export default function page() {
           >
             {benefitsAwning.map((item, index) => (
               <SwiperSlide key={index}>
-                <div className="bg-sky-100 p-4 block h-64 w-full rounded-4xl">
+                <div className="bg-sky-50 p-4 block h-64 w-full rounded-4xl">
                   <h3 className='font-display text-2xl font-medium tracking-tight text-sky-950 [text-wrap:balance] sm:text-3xl'>{item.title}</h3>
                   <ul className="text-sm gap-5 flex justify-center items-start flex-col text-sky-800">
                     <li>{item.desc[0]}</li>
@@ -110,6 +135,25 @@ export default function page() {
             ))}
           </Swiper>
         </div>
+        <FadeIn className='flex justify-center items-center flex-col mb-20 gap-14 md:flex-row'>
+          {awningType.map((item, index) => (
+            <section key={index} className='flex justify-center items-center gap-10 flex-col md:flex-row'>
+              <div className='max-w-80 ml-5'>
+                <h3 className='pb-2 font-display text-3xl font-medium tracking-tight text-sky-950 [text-wrap:balance] sm:text-4xl'>{item.title}</h3>
+                <p className='pb-5 text-sky-700'>{item.desc}</p>
+                <Link href={'/custom-awning-london'} className='px-8 py-3 border border-sky-600 bg-sky-600 text-white rounded-full hover:bg-white hover:text-sky-600'>Read More</Link>
+              </div>
+              <div>
+                <Image 
+                  className='rounded-4xl md:hidden'
+                  src={item.imgSrc}
+                  width={300}
+                  height={100}
+                  alt='custom-link'/>
+              </div>
+            </section>
+          ))}
+        </FadeIn>
       </>
   )
 }

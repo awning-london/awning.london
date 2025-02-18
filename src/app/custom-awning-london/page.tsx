@@ -4,7 +4,6 @@ import clsx from 'clsx'
 import { type Metadata } from 'next'
 import Image from 'next/image'
 
-
 export const metadata: Metadata = {
   title: 'Custom Canopy | Awning London',
   description: 'Enhance your property’s curb appeal with our premium custom awnings in London. ',
@@ -101,8 +100,6 @@ export default function Custom() {
             </div>
           </Container>
           ))}
-          
-          
       </>
   )
 }

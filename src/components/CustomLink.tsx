@@ -19,6 +19,6 @@ export default function CustomLink() {
            height={100}
            alt='custom-link'/>
         </div>
-      </section>
+    </section>
   )
 }
