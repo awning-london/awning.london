@@ -125,7 +125,7 @@ export default async function Home() {
       </Container>
       <SwiperSlides/>
       
-      <Testimonial className="mt-6 sm:mt-8 md:mt-12">
+      <Testimonial title='Comments of our customers' className="mt-6 sm:mt-8 md:mt-12">
         Fantastic service! Professional, detail-oriented team. 
         My awning and garage door look perfect, were installed on time, and at a great price. Highly recommend!
       </Testimonial>

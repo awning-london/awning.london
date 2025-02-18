@@ -8,9 +8,11 @@ import { GridPattern } from '@/components/GridPattern'
 export function Testimonial({
   children,
   className,
+  title
 }: {
   children: React.ReactNode
   className?: string
+  title: string
 }) {
   return (
     <div
@@ -27,7 +29,7 @@ export function Testimonial({
         <FadeIn>
           <figure className="mx-auto max-w-4xl">
             <h4 className="mb-5">
-              Comments of our customers
+              {title}
             </h4>
             <blockquote className="relative font-display text-xl font-medium tracking-tight text-sky-950 lg:text-3xl">
               <p className="before:content-['“'] after:content-['”'] sm:before:absolute sm:before:right-full">

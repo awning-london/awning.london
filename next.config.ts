@@ -1,10 +1,8 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    unoptimized: true, // Disable default image optimization
+    unoptimized: true,
   },
-  // assetPrefix: isProd ? '/awning.london/' : '',
-  // basePath: isProd ? '/awning.london' : '',
   output: 'export'
 };
 
