@@ -75,24 +75,28 @@ function Services() {
               />
             </FadeIn>
           </div>
-          <List className="mt-8 lg:mt-0 lg:w-1/2 lg:min-w-[33rem] lg:pl-4">
-            <ListItem title="Awning Design & Installation">
-              We create stylish, high-quality awnings tailored to fit any space, 
-              providing both shade and curb appeal.
-            </ListItem>
-            <ListItem title="Custom Solutions">
-              Our custom awnings are designed to match unique architectural styles,
-              with a range of materials and colors for a perfect fit.
-            </ListItem>
-            <ListItem title="Residential Awnings">
-              Enhance your home’s outdoor spaces with durable, 
-              beautiful awnings that provide shade and style.
-            </ListItem>
-            <ListItem title="Commercial Awnings">
-              Professional awning solutions to create inviting entrances,
-             outdoor seating areas, and more for your business.
-            </ListItem>
-          </List>
+          <div className='flex flex-col justify-center items-center gap-10'>
+            <List className="mt-8 lg:mt-0 lg:w-1/2 lg:min-w-[33rem] lg:pl-4">
+              <ListItem title="Awning Design & Installation">
+                We create stylish, high-quality awnings tailored to fit any space, 
+                providing both shade and curb appeal.
+
+              </ListItem>
+              <ListItem title="Custom Solutions">
+                Our custom awnings are designed to match unique architectural styles,
+                with a range of materials and colors for a perfect fit.
+              </ListItem>
+              <ListItem title="Residential Awnings">
+                Enhance your home’s outdoor spaces with durable, 
+                beautiful awnings that provide shade and style.
+              </ListItem>
+              <ListItem title="Commercial Awnings">
+                Professional awning solutions to create inviting entrances,
+              outdoor seating areas, and more for your business.
+              </ListItem>
+            </List>
+            <Link href={'/services'} className='px-10 py-3 border border-sky-600 bg-sky-600 text-white rounded-full hover:bg-white hover:text-sky-600'>Services</Link>
+          </div>
         </div>
       </Container>
     </>
@@ -118,14 +122,14 @@ export default async function Home() {
           Elevate your outdoor living with our premium custom awnings in London—meticulously designed for enduring elegance and engineered with high-quality materials to provide lasting durability.
           </p>
           <div className='my-5'>
-            <Link href={"/contact"} className='text-xl bg-sky-600 text-white rounded-full px-8 py-3 mr-5 border border-sky-600 hover:bg-white hover:text-sky-600'>Book</Link>
+            <Link href={"/contact"} className='text-xl bg-sky-600 text-white rounded-full px-8 py-3 mr-5 border border-sky-600 hover:bg-white hover:text-sky-600'>Contact</Link>
             <Link href={"/about"} className='text-xl text-sky-600 bg-white border border-sky-600 rounded-full px-8 py-3 hover:bg-sky-600 hover:text-white'>About</Link>
           </div>
         </FadeIn>
       </Container>
       <SwiperSlides/>
       
-      <Testimonial title='Comments of our customers' className="mt-6 sm:mt-8 md:mt-12">
+      <Testimonial title='Comments of our customers' className="mt-6 sm:mt-8 md:mt-12 mb-20">
         Fantastic service! Professional, detail-oriented team. 
         My awning and garage door look perfect, were installed on time, and at a great price. Highly recommend!
       </Testimonial>
