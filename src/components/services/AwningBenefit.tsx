@@ -10,32 +10,36 @@ import "swiper/css/pagination";
 
 const benefitsAwning = [
     {
-      "title": "Shade & Comfort",
+      "title": "Patios in London",
       "desc": [
-        "Blocks harmful UV rays, reducing sun exposure.",
-        "Creates a cooler outdoor environment for relaxation.",
-        "Helps prevent indoor spaces from overheating.",
+        "With London’s varying climate, awnings provide much-needed shade during hot summer days while protecting you from light rain.",
+        "Enjoy your patio all year round, whether you're hosting in Camden or having a family BBQ in Richmond.",
       ]
     },
     {
-      "title": "Weather Protection",
+      "title": "Gardens in London",
       "desc": [
-        "Shields against rain and wind, extending the usability of outdoor spaces.",
-        "Protects outdoor furniture from fading and wear.",
-        "Durable materials ensure long-lasting resistance to harsh weather.",
+        "Our awnings protect your plants from harsh sun exposure, helping gardens thrive even in the heat of summer.",
+        "With our weather-resistant awnings, you can make the most of your garden during London’s occasional downpours.",
       ]
     },
     {
-      "title": "Shade & Comfort",
+      "title": "Balconies & Decks in London",
       "desc": [
-        "Reduces indoor cooling costs by blocking excess sunlight.",
-        "Helps maintain consistent indoor temperatures, lowering air conditioning usage.",
-        "Acts as an eco-friendly home improvement option."
+        "If you're living in one of London’s charming flats or apartments, our awnings offer protection for your balcony in areas like Shoreditch or Clapham.",
+        "Awnings help shield your outdoor seating areas from the unpredictable weather London is known for, allowing you to enjoy outdoor space all year.",
+      ]
+    },
+    {
+      "title": "Windows in London Homes",
+      "desc": [
+        "By installing awnings over your windows, you can help reduce indoor temperatures, a great solution for summer heat in places like South Bank and Notting Hill.",
+        "Keep your home private while letting in natural light by installing an awning over your windows in residential areas of London.",
       ]
     }
   ]
 
-export default function BenefitSlider() {
+export default function AwningBenefit() {
   return (
     <div className='mx-auto max-w-7xl px-2 lg:px-4 mb-20'>
       <Swiper
