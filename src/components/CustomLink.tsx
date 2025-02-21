@@ -1,7 +1,8 @@
-import Image from 'next/image'
 import React from 'react'
 import { SectionIntro } from './SectionIntro'
 import { Button } from './Button'
+import { FadeIn } from './FadeIn'
+import { StylizedImage } from './StylizedImage'
 
 export default function CustomLink() {
   
@@ -13,19 +14,22 @@ export default function CustomLink() {
             title="Ready to transform your outdoor area with a truly bespoke awning?"
             className="mt-10 sm:mt-12 md:mt-20"
           >
-            <Button href="/services/custom-awnings" invert={false}>
+            <Button href="/services/custom-awning" invert={false}>
               Awning In London
             </Button>
           </SectionIntro>
         </div>
-        <div>
-          <Image 
-          className='rounded-4xl md:w-[400px]'
-           src={"/custom-link.jpg"}
-           width={300}
-           height={100}
-           alt='custom-link'/>
-        </div>
+        <div className="flex justify-center lg:w-1/2 lg:justify-end lg:pr-12">
+            <FadeIn className="w-[25rem] md:w-[33.75rem] flex-none lg:w-[40rem]">
+              <StylizedImage
+                src={"/custom-link.jpg"}
+                width={300}
+                height={100}
+                sizes="(min-width: 1024px) 41rem, 31rem"
+                className="justify-center lg:justify-end"
+              />
+            </FadeIn>
+          </div>
     </section>
   )
 }

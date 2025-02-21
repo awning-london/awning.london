@@ -9,6 +9,7 @@ import img1 from '@/images/a23.jpg'
 import img2 from '@/images/a22.jpg'
 import img3 from '@/images/a21.jpg'
 import img4 from '@/images/a24.jpg'
+import ScrollButton from '@/components/ScrollButton'
 
 function Section({
   title,
@@ -155,6 +156,7 @@ export default function Process() {
       </div>
 
       <ContactSection />
+      <ScrollButton/>
     </>
   )
 }

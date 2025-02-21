@@ -63,9 +63,12 @@ function Services() {
           We offer a wide range of services to meet your needs, including custom-designed awnings, 
           retractable awnings, fixed awnings, and motorized awnings.
         </p>
+        <Button href="/services" invert={false} className='mt-5'>
+          Services
+        </Button>
       </SectionIntro>
       <Container className="mt-0">
-        <div className="lg:flex lg:items-center lg:justify-end">
+        <div className="lg:flex lg:items-center lg:justify-end mt-10">
           <div className="flex justify-center lg:w-1/2 lg:justify-end lg:pr-12">
             <FadeIn className="w-[25rem] md:w-[33.75rem] flex-none lg:w-[45rem]">
               <StylizedImage
@@ -78,27 +81,42 @@ function Services() {
           <div className='flex flex-col justify-center items-center gap-10'>
             <List className="mt-8 lg:mt-0 lg:w-1/2 lg:min-w-[33rem] lg:pl-4">
               <ListItem title="Awning Design & Installation">
-                We create stylish, high-quality awnings tailored to fit any space, 
-                providing both shade and curb appeal.
-
+                <div className='flex flex-col justify-center items-start'>
+                  We create stylish, high-quality awnings tailored to fit any space, 
+                  providing both shade and curb appeal.
+                  <Button href={"/installation-process"} invert={true} className='m-2 -ml-1 flex border border-sky-200'>
+                    Process
+                  </Button>
+                </div>
               </ListItem>
               <ListItem title="Custom Solutions">
-                Our custom awnings are designed to match unique architectural styles,
-                with a range of materials and colors for a perfect fit.
+                <div className='flex flex-col justify-center items-start'>
+                  Our custom awnings are designed to match unique architectural styles,
+                  with a range of materials and colors for a perfect fit.
+                  <Button href={"/services/custom-awning"} invert={true} className='m-2 -ml-1 flex border border-sky-200'>
+                    Custom
+                  </Button>
+                </div>
               </ListItem>
               <ListItem title="Residential Awnings">
-                Enhance your home’s outdoor spaces with durable, 
-                beautiful awnings that provide shade and style.
+                <div className='flex flex-col justify-center items-start'>
+                  Enhance your home’s outdoor spaces with durable, 
+                  beautiful awnings that provide shade and style.
+                  <Button href={"/services/residential-awning"} invert={true} className='m-2 -ml-1 flex border border-sky-200'>
+                    Residential
+                  </Button>
+                </div>
               </ListItem>
               <ListItem title="Commercial Awnings">
-                Professional awning solutions to create inviting entrances,
-              outdoor seating areas, and more for your business.
+              <div className='flex flex-col justify-center items-start'>
+                  Professional awning solutions to create inviting entrances,
+                  outdoor seating areas, and more for your business.
+                  <Button href={"/services/commercial-awning"} invert={true} className='m-2 -ml-1 flex border border-sky-200'>
+                    Commercial
+                  </Button>
+                </div>
               </ListItem>
             </List>
-            {/* <Link href={'/services'} className='px-10 py-3 border border-sky-600 bg-sky-600 text-white rounded-full hover:bg-white hover:text-sky-600'>Services</Link> */}
-            <Button href="/services" invert={false}>
-              Services
-            </Button>
           </div>
         </div>
       </Container>
@@ -135,7 +153,6 @@ export default async function Home() {
         </FadeIn>
       </Container>
       <SwiperSlides/>
-      
       <Testimonial title='Comments of our customers' className="mt-6 sm:mt-8 md:mt-12 mb-20">
         Fantastic service! Professional, detail-oriented team. 
         My awning and garage door look perfect, were installed on time, and at a great price. Highly recommend!
