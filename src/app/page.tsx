@@ -13,6 +13,7 @@ import SwiperSlides from '@/components/SwiperSlides'
 import Link from 'next/link';
 import CustomLink from '@/components/CustomLink';
 import ScrollButton from '@/components/ScrollButton';
+import { Button } from '@/components/Button';
 
 const features = [
   ['Custom Designs'],
@@ -121,9 +122,13 @@ export default async function Home() {
           <p className="mt-2 text-xl text-sky-700">
           Elevate your outdoor living with our premium custom awnings in London—meticulously designed for enduring elegance and engineered with high-quality materials to provide lasting durability.
           </p>
-          <div className='my-5'>
-            <Link href={"/contact"} className='text-xl bg-sky-600 text-white rounded-full px-8 py-3 mr-5 border border-sky-600 hover:bg-white hover:text-sky-600'>Contact</Link>
-            <Link href={"/about"} className='text-xl text-sky-600 bg-white border border-sky-600 rounded-full px-8 py-3 hover:bg-sky-600 hover:text-white'>About</Link>
+          <div className='my-5 gap-5 flex'>
+            <Button href="/contact" invert={false}>
+              Contact
+            </Button>
+            <Button href="/about" invert={true}>
+              About
+            </Button>
           </div>
         </FadeIn>
       </Container>

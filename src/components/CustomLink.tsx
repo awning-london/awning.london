@@ -1,7 +1,7 @@
-import Link from 'next/link'
 import Image from 'next/image'
 import React from 'react'
 import { SectionIntro } from './SectionIntro'
+import { Button } from './Button'
 
 export default function CustomLink() {
   
@@ -13,7 +13,9 @@ export default function CustomLink() {
             title="Ready to transform your outdoor area with a truly bespoke awning?"
             className="mt-10 sm:mt-12 md:mt-20"
           >
-            <Link href={'/services/custom-awnings'} className='px-8 py-3 border border-sky-600 bg-sky-600 text-white rounded-full hover:bg-white hover:text-sky-600'>Awning In London</Link>
+            <Button href="/services/custom-awnings" invert={false}>
+              Awning In London
+            </Button>
           </SectionIntro>
         </div>
         <div>
