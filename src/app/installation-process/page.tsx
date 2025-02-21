@@ -154,8 +154,6 @@ export default function Process() {
         <Installation  />
       </div>
 
-      {/* <Values /> */}
-
       <ContactSection />
     </>
   )

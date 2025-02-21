@@ -2,19 +2,9 @@ import { Container } from '@/components/Container'
 import { FadeIn, FadeInStagger } from '@/components/FadeIn'
 import clsx from 'clsx'
 import { type Metadata } from 'next'
-import Image from 'next/image'
-
-export const metadata: Metadata = {
-  title: 'Custom Canopy | Awning London',
-  description: 'Enhance your property’s curb appeal with our premium custom awnings in London. ',
-}
-
-const CustomFeatures = [
-  ['Transform Your Outdoor Spaces with Bespoke Design'],
-  ['Tailored to Your Unique Style'],
-  ['Premium Quality Materials & Craftsmanship'],
-  ['Expert Installation & Seamless Integration'],
-]
+import { StylizedImage } from '@/components/StylizedImage'
+import ScrollButton from '@/components/ScrollButton'
+import { ContactSection } from '@/components/ContactSection'
 
 const CustomContent = [
   {
@@ -43,6 +33,100 @@ const CustomContent = [
   },
 ]
 
+function Section({
+  title,
+  image,
+  children,
+}: {
+  title: string
+  image: React.ComponentPropsWithoutRef<typeof StylizedImage>
+  children: React.ReactNode
+}) {
+  return (
+    <Container className="group/section [counter-increment:section]">
+      <div className="lg:flex lg:items-center lg:justify-end lg:gap-x-8 lg:group-even/section:justify-start xl:gap-x-20">
+        <div className="flex justify-center">
+          <FadeIn className="w-[33.75rem] flex-none lg:w-[45rem]">
+            <StylizedImage
+              {...image}
+              width={200}
+              height={100}
+              sizes="(min-width: 1024px) 41rem, 31rem"
+              className="justify-center lg:justify-end lg:group-even/section:justify-start"
+            />
+          </FadeIn>
+        </div>
+        <div className="mt-12 lg:mt-0 lg:w-[37rem] lg:flex-none lg:group-even/section:order-first">
+          <FadeIn>
+            <div
+              className="font-display text-base font-semibold before:text-neutral-300 before:content-['/_'] after:text-sky-950 after:content-[counter(section,decimal-leading-zero)]"
+              aria-hidden="true"
+            />
+            <h2 className="mt-2 font-display text-3xl font-medium tracking-tight text-sky-950 sm:text-4xl">
+              {title}
+            </h2>
+            <div className="mt-6">{children}</div>
+          </FadeIn>
+        </div>
+      </div>
+    </Container>
+  )
+}
+
+function Transform() {
+  return (
+    <Section title={CustomContent[0].title} image={{ src: CustomContent[0].imgsrc }}>
+      <FadeIn>
+        <p>
+          {CustomContent[0].desc}
+        </p>
+      </FadeIn>
+    </Section>
+  )
+}
+
+function Tailored() {
+  return (
+    <Section title={CustomContent[1].title} image={{ src: CustomContent[1].imgsrc }}>
+      <FadeIn>
+        <p>
+          {CustomContent[1].desc}
+        </p>
+      </FadeIn>
+    </Section>
+  )
+}
+
+function Premium() {
+  return (
+    <Section title={CustomContent[2].title} image={{ src: CustomContent[2].imgsrc }}>
+      <FadeIn>
+        <p>
+          {CustomContent[2].desc}
+        </p>
+      </FadeIn>
+    </Section>
+  )
+}
+
+function Expert() {
+  return (
+    <Section title={CustomContent[3].title} image={{ src: CustomContent[3].imgsrc }}>
+      <FadeIn>
+        <p>
+          {CustomContent[3].desc}
+        </p>
+      </FadeIn>
+    </Section>
+  )
+}
+
+
+export const metadata: Metadata = {
+  title: 'Custom Canopy | Awning London',
+  description: 'Enhance your property’s curb appeal with our premium custom awnings in London. ',
+}
+
 export default function Page() {
   
   return (
@@ -70,36 +154,23 @@ export default function Page() {
               role="list"
               className="mt-4 grid grid-cols-1 md:grid-cols-2 gap-x-2 gap-y-1 lg:grid-cols-3 text-white"
               >
-              {CustomFeatures.map(([feature]) => (
-                <li key={feature} className={clsx('flex items-center ')}>
-                  {feature}
+              {CustomContent.map(item => (
+                <li key={item.id} className={clsx('flex items-center text-sm')}>
+                  {item.title}
                 </li>
               ))}
             </ul>
           </FadeInStagger>
           </Container>
         </div>
-        {CustomContent.map((content) => (
-          <Container key={content.id} className="mt-8 sm:mt-12 md:mt-16 mb-20">
-            <div className='flex justify-between items-center flex-col lg:flex-row '>
-              <FadeIn className="max-w-3xl gap-5">
-                <h2 className="font-display text-xl font-medium tracking-tight text-sky-950 [text-wrap:balance] sm:text-3xl">
-                  {content.title}
-                </h2>
-                <p className="mt-2 text-lg text-sky-700 max-w-96">
-                  {content.desc}
-                </p>
-              </FadeIn>
-              <Image 
-                className='rounded-4xl'
-                alt='custom-canopy'
-                src={content.imgsrc}
-                width={500}
-                height={300}
-                />
-            </div>
-          </Container>
-          ))}
+        <Container className='my-20'>
+          <Transform/>
+          <Tailored/>
+          <Premium/>
+          <Expert/> 
+        </Container>
+        <ContactSection />
+        <ScrollButton/>
       </>
   )
 }
