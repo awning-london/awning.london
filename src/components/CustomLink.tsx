@@ -13,7 +13,7 @@ export default function CustomLink() {
             title="Ready to transform your outdoor area with a truly bespoke awning?"
             className="mt-10 sm:mt-12 md:mt-20"
           >
-            <Link href={'/custom-awning-london'} className='px-8 py-3 border border-sky-600 bg-sky-600 text-white rounded-full hover:bg-white hover:text-sky-600'>Awning In London</Link>
+            <Link href={'/services/custom-awnings'} className='px-8 py-3 border border-sky-600 bg-sky-600 text-white rounded-full hover:bg-white hover:text-sky-600'>Awning In London</Link>
           </SectionIntro>
         </div>
         <div>
