@@ -1,8 +1,10 @@
 import { Container } from '@/components/Container'
 import { FadeIn } from '@/components/FadeIn'
+import { List, ListItem } from '@/components/List'
 import ScrollButton from '@/components/ScrollButton'
 import { SectionIntro } from '@/components/SectionIntro'
 import AwningBenefit from '@/components/services/AwningBenefit'
+import FAQPage from '@/components/services/Faq'
 import { StylizedImage } from '@/components/StylizedImage'
 import { Metadata } from 'next'
 import React from 'react'
@@ -13,25 +15,25 @@ import React from 'react'
     {
       "id": 1,
       "title": "Retractable Awnings",
-      "desc": "Adaptable for London Weather: Whether it's a sunny afternoon in Islington or a rainy evening in Greenwich, retractable awnings are perfect for patios or balconies that need flexible weather protection.",
+      "desc": " Whether it's a sunny afternoon in Islington or a rainy evening in Greenwich, retractable awnings are perfect for patios or balconies that need flexible weather protection.",
       "imgsrc": "/residential/retractable.jpg"
     },
     {
       "id": 2,
       "title": "Fixed Awnings",
-      "desc": "Permanent Shade for Busy London Streets: Fixed awnings offer long-term protection for homes near busy streets or public spaces, ideal for protecting patios in bustling areas like Soho or Covent Garden.",
+      "desc": "Fixed awnings offer long-term protection for homes near busy streets or public spaces, ideal for protecting patios in bustling areas like Soho or Covent Garden.",
       "imgsrc": "/residential/fixed.jpg"
     },
     {
       "id": 3,
       "title": "Motorized Awnings",
-      "desc": "Convenience for Busy Londoners: Motorized awnings are perfect for homeowners who prefer automated solutions for larger properties or hard-to-reach areas, such as those with large decks in Hampstead.",
+      "desc": "Motorized awnings are perfect for homeowners who prefer automated solutions for larger properties or hard-to-reach areas, such as those with large decks in Hampstead.",
       "imgsrc": "/residential/motorized.jpg"
     },
     {
       "id": 4,
       "title": "Manual Awnings",
-      "desc": "Affordable Option for London Homes: Manual awnings provide a budget-friendly way to add shade and protection, perfect for small patios or garden spaces in residential areas like Wimbledon.",
+      "desc": "Manual awnings provide a budget-friendly way to add shade and protection, perfect for small patios or garden spaces in residential areas like Wimbledon.",
       "imgsrc": "/residential/manual.jpg"
     },
   ]
@@ -62,7 +64,7 @@ import React from 'react'
           <div className="mt-12 lg:mt-0 lg:w-[37rem] lg:flex-none lg:group-even/section:order-first">
             <FadeIn>
               <div
-                className="font-display text-base font-semibold before:text-neutral-300 before:content-['/_'] after:text-sky-950 after:content-[counter(section,decimal-leading-zero)]"
+                className="font-display text-base font-semibold before:text-neutral-300 after:text-sky-950 "
                 aria-hidden="true"
               />
               <h2 className="mt-2 font-display text-3xl font-medium tracking-tight text-sky-950 sm:text-4xl">
@@ -80,10 +82,13 @@ import React from 'react'
     return (
       <Section title={CustomContent[0].title} image={{ src: CustomContent[0].imgsrc }}>
         <FadeIn>
-          <p>
-            {CustomContent[0].desc}
-          </p>
+          <List className="mt-8 lg:mt-0 lg:w-1/2 lg:min-w-[33rem] lg:pl-4">
+                <ListItem title="Adaptable for London Weather">
+                    {CustomContent[0].desc}
+                </ListItem>
+            </List>
         </FadeIn>
+        
       </Section>
     )
   }
@@ -92,9 +97,11 @@ import React from 'react'
     return (
       <Section title={CustomContent[1].title} image={{ src: CustomContent[1].imgsrc }}>
         <FadeIn>
-          <p>
-            {CustomContent[1].desc}
-          </p>
+            <List className="mt-8 lg:mt-0 lg:w-1/2 lg:min-w-[33rem] lg:pl-4">
+                <ListItem title="Permanent Shade for Busy London Streets">
+                    {CustomContent[1].desc}
+                </ListItem>
+            </List>
         </FadeIn>
       </Section>
     )
@@ -104,9 +111,11 @@ import React from 'react'
     return (
       <Section title={CustomContent[2].title} image={{ src: CustomContent[2].imgsrc }}>
         <FadeIn>
-          <p>
-            {CustomContent[2].desc}
-          </p>
+            <List className="mt-8 lg:mt-0 lg:w-1/2 lg:min-w-[33rem] lg:pl-4">
+                <ListItem title="Convenience for Busy Londoners">
+                    {CustomContent[2].desc}
+                </ListItem>
+            </List>
         </FadeIn>
       </Section>
     )
@@ -116,9 +125,11 @@ import React from 'react'
     return (
       <Section title={CustomContent[3].title} image={{ src: CustomContent[3].imgsrc }}>
         <FadeIn>
-          <p>
-            {CustomContent[3].desc}
-          </p>
+            <List className="mt-8 lg:mt-0 lg:w-1/2 lg:min-w-[33rem] lg:pl-4">
+                <ListItem title="Affordable Option for London Homes">
+                    {CustomContent[3].desc}
+                </ListItem>
+            </List>
         </FadeIn>
       </Section>
     )
@@ -166,6 +177,7 @@ import React from 'react'
                 <Motorized/>
                 <Manual/>
             </Container>
+            <FAQPage/>
             <ScrollButton/>
         </>
     )
