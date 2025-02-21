@@ -146,7 +146,7 @@ export default async function Home() {
             <Button href="/contact" invert={false}>
               Contact
             </Button>
-            <Button href="/about" invert={true}>
+            <Button href="/about" invert={true} className='border border-sky-200'>
               About
             </Button>
           </div>
