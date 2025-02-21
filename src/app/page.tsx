@@ -10,7 +10,6 @@ import { Testimonial } from '@/components/Testimonial'
 import awnSample from '@/images/awn.jpg'
 import clsx from 'clsx';
 import SwiperSlides from '@/components/SwiperSlides'
-import Link from 'next/link';
 import CustomLink from '@/components/CustomLink';
 import ScrollButton from '@/components/ScrollButton';
 import { Button } from '@/components/Button';
@@ -96,7 +95,10 @@ function Services() {
               outdoor seating areas, and more for your business.
               </ListItem>
             </List>
-            <Link href={'/services'} className='px-10 py-3 border border-sky-600 bg-sky-600 text-white rounded-full hover:bg-white hover:text-sky-600'>Services</Link>
+            {/* <Link href={'/services'} className='px-10 py-3 border border-sky-600 bg-sky-600 text-white rounded-full hover:bg-white hover:text-sky-600'>Services</Link> */}
+            <Button href="/services" invert={false}>
+              Services
+            </Button>
           </div>
         </div>
       </Container>
