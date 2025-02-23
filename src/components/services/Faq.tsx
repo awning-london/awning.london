@@ -1,4 +1,4 @@
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/accordion"
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/Accordion"
 import { Button } from "../Button"
 
 const faqAwning = [
