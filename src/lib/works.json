@@ -1,0 +1,102 @@
+[
+    {
+        "id": "fixed-awning",
+        "title": "Fixed Awning Installations in London – Real Success Stories",
+        "desc": "Explore our fixed awning case studies in London, showcasing how we’ve transformed residential and commercial spaces with durable, stylish, and weather-resistant solutions. ",
+        "btnTitle": "Fixed Awning",
+        "overview": "Looking for inspiration for your next project? Explore our fixed awning case studies in London, showcasing how we’ve transformed residential and commercial spaces with durable, stylish, and weather-resistant solutions. Our work emphasizes quality, functionality, and customer satisfaction, ensuring long-term value for every client.",
+        "benefit": {
+            "Permanent Weather Protection": "Year-round shelter from rain, sun, and wind.",
+            "Enhanced Curb Appeal": "Stylish designs that complement various architectural styles.",
+            "Energy Efficiency": "Reduced indoor temperatures and lower cooling costs.",
+            "Custom Solutions": "Tailored to meet specific client needs and preferences."
+        },
+        "featured": {
+            "Client Need": "A family wanted a shaded area for outdoor gatherings.",
+            "Solution": "Installed a fixed awning with a UV-resistant fabric and sleek aluminum frame.",
+            "Result": "Comfortable patio space usable throughout the year.",
+            "Testimonial": "We now enjoy our garden even on sunny days—great investment!"
+        },
+        "imgurl": "/work/fixed-awning/1.jpg"
+    },
+    {
+        "id": "manual-awning",
+        "title": "Manual Awning Installations in London – Real-Life Project Success Stories",
+        "desc": "Our manual awning installations across London offer ease of use, durability, and versatile outdoor coverage.",
+        "btnTitle": "Manual Awning",
+        "overview": "Looking for an affordable and practical shading solution? Our manual awning installations across London offer ease of use, durability, and versatile outdoor coverage. Explore our case studies to see how we've helped homeowners and businesses enhance their outdoor spaces with functional, stylish manual awnings.",
+        "benefit": {
+            "Cost-Effective": "Affordable shading solution without compromising quality.",
+            "Ease of Use": "Simple manual operation with minimal maintenance needs.",
+            "Versatile Applications": "Perfect for patios, balconies, storefronts, and cafes.",
+            "Durable Materials": "Weather-resistant fabrics and sturdy frames for long-term use."
+        },
+        "featured": {
+          "Client Need": "Create a shaded balcony area for relaxation.",
+          "Solution": "Installed a manually operated awning with UV-resistant fabric.",
+          "Result": "Comfortable space for morning coffee and evening relaxation.",
+          "Testimonial": "The manual awning was the perfect addition—easy to use and looks great!"
+        },
+        "imgurl": "/work/manual-awning/a3.jpg"
+    },
+    {
+        "id": "retractable-awning",
+        "title": "Retractable Awning Installations in London – Real Project Success Stories",
+        "desc": "Our retractable awning installations across London offer the perfect balance of convenience, style, and functionality.",
+        "btnTitle": "Retractable Awning",
+        "overview": "Looking for flexible shade solutions? Our retractable awning installations across London offer the perfect balance of convenience, style, and functionality. Browse our case studies to see how we’ve helped residential and commercial clients enhance their outdoor spaces with versatile retractable awnings designed to suit various needs.",
+        "benefit": {  
+            "Versatile Shading": "Extend or retract shade as needed for ultimate flexibility.",
+            "Motorized & Manual Options": "Choose between easy manual operation or convenient motorized controls.",
+            "Space Optimization": "Perfect for patios, decks, storefronts, and outdoor seating areas.",
+            "Durable Materials": "Weather-resistant fabrics and robust frames for long-lasting use."
+        },
+        "featured": {
+            "Client Need": "Create an adaptable shaded space for family gatherings.",
+            "Solution": "Installed a motorized retractable awning with remote control functionality.",
+            "Result": "Transformed the patio into a year-round usable space with flexible shading.",
+            "Testimonial": "It’s amazing how easy it is to use—the perfect addition to our outdoor area!"
+        },
+        "imgurl": "/work/retractable-awning/a2.jpg"
+    },
+    {
+        "id": "motorized-awning",
+        "title": "Motorized Awning Installations in London – Real-Life Project Success Stories",
+        "desc": "Our motorized awning installations in London offer effortless shade control, premium materials, and modern aesthetics.",
+        "btnTitle": "Motorized Awning",
+        "overview": "Looking for the ultimate in convenience and style? Our motorized awning installations in London offer effortless shade control, premium materials, and modern aesthetics. Browse through our case studies to discover how we’ve helped homeowners and businesses create versatile outdoor spaces with the convenience of motorized operation.",
+        "benefit": {
+          "Convenient Operation": "Extend or retract awnings with the push of a button.",
+          "Smart Home Integration": "Compatible with home automation systems and weather sensors.",
+          "Sleek, Modern Design": "Enhance the look of both residential and commercial spaces.",
+          "Durable & Weather-Resistant": "Built to withstand London’s varying weather conditions."
+        },
+        "featured": {  
+            "Client Need": "Create a shaded area with easy-to-use controls for a modern terrace.",
+            "Solution": "Installed a motorized awning with remote control and wind sensor features.",
+            "Result": "Effortless shade at the touch of a button, enhancing outdoor living.",
+            "Testimonial": "It’s so convenient! We use our terrace more than ever thanks to the motorized awning"
+        },
+        "imgurl": "/work/motorized-awning/a15.jpg"
+    },
+    {
+        "id": "restaurant-awning",
+        "title": "Restaurant Awning Installations in London – Real-Life Success Stories",
+        "desc": "Our restaurant awning installations in London provide stylish, weather-resistant, and functional solutions tailored to your business needs.",
+        "btnTitle": "Restaurant Awning",
+        "overview": "Looking to attract more diners and enhance your restaurant’s outdoor space? Our restaurant awning installations in London provide stylish, weather-resistant, and functional solutions tailored to your business needs. Explore our case studies to see how we’ve helped restaurants create inviting outdoor dining areas while improving branding and customer comfort.",
+        "benefit": {
+          "Enhanced Customer Comfort": "Provide shade and shelter for outdoor diners.",
+          "Custom Branding": "Showcase your restaurant’s logo and colors with printed awnings.",
+          "Weather Protection": "Extend outdoor seating year-round with durable, weather-resistant materials.",
+          "Increased Foot Traffic": "Create an eye-catching façade that attracts new customers."
+        },
+        "featured": {
+          "Client Need": "Expand seating capacity with a comfortable outdoor space.",
+          "Solution": "Installed a retractable restaurant awning with waterproof fabric and branding.",
+          "Result": "Increased seating by 30% and improved overall customer experience.",
+          "Testimonial": "Our outdoor area is always full, rain or shine. Customers love the ambiance!"
+        },
+        "imgurl": "/work/restaurant-awning/3.jpg"
+    }
+]
