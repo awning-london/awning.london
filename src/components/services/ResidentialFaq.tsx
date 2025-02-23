@@ -24,7 +24,7 @@ const faqAwning = [
     },
 ]
 
-export default function FAQPage() {
+export default function ResidentialFaq() {
   return (
     <main className="container mx-auto px-4 py-12 md:py-24">
       <div className="mx-auto max-w-3xl space-y-8">

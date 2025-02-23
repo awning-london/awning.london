@@ -4,7 +4,7 @@ import { List, ListItem } from '@/components/List'
 import ScrollButton from '@/components/ScrollButton'
 import { SectionIntro } from '@/components/SectionIntro'
 import AwningBenefit from '@/components/services/AwningBenefit'
-import ResidentialFaq from '@/components/services/ResidentialFaq'
+import CommecialFaq from '@/components/services/CommercialFaq'
 import { StylizedImage } from '@/components/StylizedImage'
 import { Metadata } from 'next'
 import React from 'react'
@@ -14,26 +14,26 @@ import React from 'react'
   const CustomContent = [
     {
       "id": 1,
-      "title": "Retractable Awnings",
-      "desc": " Whether it's a sunny afternoon in Islington or a rainy evening in Greenwich, retractable awnings are perfect for patios or balconies that need flexible weather protection.",
+      "title": "Storefront Awnings",
+      "desc": "Enhance curb appeal for retail shops, salons, and offices. Custom designs that reflect your brand’s identity.",
       "imgsrc": "/residential/retractable.jpg"
     },
     {
       "id": 2,
-      "title": "Fixed Awnings",
-      "desc": "Fixed awnings offer long-term protection for homes near busy streets or public spaces, ideal for protecting patios in bustling areas like Soho or Covent Garden.",
+      "title": "Café Canopies & Restaurant Awnings",
+      "desc": "Create comfortable outdoor dining spaces, crucial for London’s vibrant café culture. Weather-resistant options for year-round use.",
       "imgsrc": "/residential/fixed.jpg"
     },
     {
       "id": 3,
-      "title": "Motorized Awnings",
-      "desc": "Motorized awnings are perfect for homeowners who prefer automated solutions for larger properties or hard-to-reach areas, such as those with large decks in Hampstead.",
+      "title": "Retractable Awnings for Businesses",
+      "desc": "Flexible solutions for varying weather conditions. Ideal for venues needing adjustable outdoor coverage.",
       "imgsrc": "/residential/motorized.jpg"
     },
     {
       "id": 4,
-      "title": "Manual Awnings",
-      "desc": "Manual awnings provide a budget-friendly way to add shade and protection, perfect for small patios or garden spaces in residential areas like Wimbledon.",
+      "title": "Fixed Awnings",
+      "desc": "Durable, long-term solutions for consistent coverage. Great for businesses along high-traffic areas in London.",
       "imgsrc": "/residential/manual.jpg"
     },
   ]
@@ -78,12 +78,12 @@ import React from 'react'
     )
   }
   
-  function Retractable() {
+  function Storefront() {
     return (
       <Section title={CustomContent[0].title} image={{ src: CustomContent[0].imgsrc }}>
         <FadeIn>
           <List className="mt-8 lg:mt-0 lg:w-1/2 lg:min-w-[33rem] lg:pl-4">
-                <ListItem title="Adaptable for London Weather">
+                <ListItem title={undefined}>
                     {CustomContent[0].desc}
                 </ListItem>
             </List>
@@ -93,12 +93,12 @@ import React from 'react'
     )
   }
   
-  function Fixed() {
+  function Canopies() {
     return (
       <Section title={CustomContent[1].title} image={{ src: CustomContent[1].imgsrc }}>
         <FadeIn>
             <List className="mt-8 lg:mt-0 lg:w-1/2 lg:min-w-[33rem] lg:pl-4">
-                <ListItem title="Permanent Shade for Busy London Streets">
+                <ListItem title={undefined}>
                     {CustomContent[1].desc}
                 </ListItem>
             </List>
@@ -107,12 +107,12 @@ import React from 'react'
     )
   }
   
-  function Motorized() {
+  function Retractable() {
     return (
       <Section title={CustomContent[2].title} image={{ src: CustomContent[2].imgsrc }}>
         <FadeIn>
             <List className="mt-8 lg:mt-0 lg:w-1/2 lg:min-w-[33rem] lg:pl-4">
-                <ListItem title="Convenience for Busy Londoners">
+                <ListItem title={undefined}>
                     {CustomContent[2].desc}
                 </ListItem>
             </List>
@@ -121,12 +121,12 @@ import React from 'react'
     )
   }
   
-  function Manual() {
+  function Fixed() {
     return (
       <Section title={CustomContent[3].title} image={{ src: CustomContent[3].imgsrc }}>
         <FadeIn>
             <List className="mt-8 lg:mt-0 lg:w-1/2 lg:min-w-[33rem] lg:pl-4">
-                <ListItem title="Affordable Option for London Homes">
+                <ListItem title={undefined}>
                     {CustomContent[3].desc}
                 </ListItem>
             </List>
@@ -136,8 +136,8 @@ import React from 'react'
   }
   
   export const metadata: Metadata = {
-    title: 'Residential Awnings in London | Stylish, Durable, & Custom Outdoor Shade Solutions',
-    description: 'Discover high-quality residential awnings in London for your patio, garden, balcony, and windows. Choose from retractable, fixed, and motorized options designed to enhance comfort and style. Get a free quote today!',
+    title: 'Commercial Awnings in London | Custom Storefront & Café Canopy Solutions',
+    description: 'Enhance your London business with custom commercial awnings. Improve branding, customer comfort, and energy efficiency with storefront awnings, café canopies, and retractable solutions. Get a free quote today!',
   }
   
   export default function Page() {
@@ -147,10 +147,10 @@ import React from 'react'
           <Container className="mt-8 sm:mt-12 md:mt-16 mb-20">
             <FadeIn className="max-w-3xl">
               <h1 className="font-display text-4xl font-medium tracking-tight text-sky-950 [text-wrap:balance] sm:text-5xl">
-                Enhance Your Outdoor Living with Stylish Residential Awnings in London
+                Enhance Your Business with Custom Commercial Awnings in London
               </h1>
               <p className="mt-2 text-xl text-sky-700">
-                Create a comfortable, shaded space for your London patio, garden, balcony, or windows with durable, stylish residential awnings.
+                Attract more customers, improve comfort, and boost energy efficiency with our high-quality commercial awning solutions.
               </p>
             </FadeIn>
           </Container>
@@ -163,21 +163,27 @@ import React from 'react'
             </Container> 
             <AwningBenefit/>
           <SectionIntro
-                  eyebrow="Residential Awnings"
-                  title="Why Choose Residential Awnings in London?"
+                  eyebrow="Commercial Awnings"
+                  title="Why Choose Commercial Awnings for Your London Business?"
                   className="mt-10 sm:mt-12 md:mt-20"
             >
               <p>
-                Residential awnings are a fantastic way to enhance your outdoor living spaces in London. Whether you have a garden in Hackney, a balcony in Westminster, or a patio in Chelsea, our high-quality awnings provide shade, protection, and style. We offer customizable solutions that fit the unique needs of London homeowners, with designs and materials that endure the varied weather conditions throughout the year.
+                Overview of how awnings benefit businesses in London’s competitive market.
+              </p>
+              <p>
+                Mention key benefits: Enhanced storefront appeal, customer comfort, weather protection, and potential energy savings.
+              </p>
+              <p>
+                Local relevance: Emphasize how London’s climate and bustling streets make awnings a practical choice for local businesses.
               </p>
             </SectionIntro>
             <Container className='my-10'>
                 <Retractable/>
+                <Storefront/>
+                <Canopies/>
                 <Fixed/>
-                <Motorized/>
-                <Manual/>
             </Container>
-            <ResidentialFaq/>
+            <CommecialFaq/>
             <ScrollButton/>
         </>
     )
