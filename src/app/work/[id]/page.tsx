@@ -7,12 +7,9 @@ export async function generateStaticParams() {
   return workIds.map((id) => ({ id }));
 }
 
-export default async function WorkPage({
-  params,
-}: {
-  params: { id: string };
-}) {
-  const { id } = await Promise.resolve(params);
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+export default async function WorkPage(props: any) {
+  const { id } = await Promise.resolve(props.params);
   const work = await getWork(id);
 
   if (!work) {
