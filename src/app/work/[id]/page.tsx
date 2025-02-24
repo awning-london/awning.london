@@ -2,17 +2,17 @@ import { PageIntro } from "@/components/PageIntro";
 import { getWork, getAllWorkIds } from "@/lib/work";
 import { notFound } from "next/navigation";
 
-interface WorkPageProps {
-  params: { id: string } | Promise<{ id: string }>;
-}
-
 export async function generateStaticParams() {
   const workIds = await getAllWorkIds();
   return workIds.map((id) => ({ id }));
 }
 
-export default async function WorkPage(props: WorkPageProps) {
-  const { id } = await props.params;
+export default async function WorkPage({
+  params,
+}: {
+  params: { id: string };
+}) {
+  const { id } = await Promise.resolve(params);
   const work = await getWork(id);
 
   if (!work) {
@@ -26,4 +26,4 @@ export default async function WorkPage(props: WorkPageProps) {
       </PageIntro>
     </>
   );
-};
+}
