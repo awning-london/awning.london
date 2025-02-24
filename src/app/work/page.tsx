@@ -30,7 +30,6 @@ export default async function Work() {
 
       <Container className='flex justify-center items-center'>
         {works.map(caseStudy => (
-          <>
             <div key={caseStudy.id} className='flex justify-between items-center my-10 md:flex-row flex-col'>
               <Image
                 src={caseStudy.imgurl}
@@ -50,8 +49,6 @@ export default async function Work() {
                 </Button>
               </SectionIntro>
             </div>
-            <hr />
-          </>
 
         ))}
       </Container>
