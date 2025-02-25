@@ -3,7 +3,6 @@ import { PageIntro } from "@/components/PageIntro";
 import { getWork, getAllWorkIds } from "@/lib/work";
 import { notFound } from "next/navigation";
 import Image from 'next/image'
-import { Container } from "@/components/Container";
 import { SectionIntro } from "@/components/SectionIntro";
 
 export async function generateStaticParams() {
