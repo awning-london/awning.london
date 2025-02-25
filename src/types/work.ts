@@ -6,5 +6,5 @@ export interface Work {
     overview: string
     benefit: string[]
     featured: string[]
-    imgurl: string
+    imgurl: string[]
   }

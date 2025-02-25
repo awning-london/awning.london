@@ -17,7 +17,10 @@
             "Result - Comfortable patio space usable throughout the year.",
             "Testimonial - We now enjoy our garden even on sunny days—great investment!"
         ],
-        "imgurl": "/work/fixed-awning/1.jpg"
+        "imgurl": [
+            "/work/fixed-awning/1.jpg",
+            "/work/fixed-awning/4.jpg"
+        ]
     },
     {
         "id": "manual-awning",
@@ -37,7 +40,10 @@
           "Result - Comfortable space for morning coffee and evening relaxation.",
           "Testimonial - The manual awning was the perfect addition—easy to use and looks great!"
         ],
-        "imgurl": "/work/manual-awning/a3.jpg"
+        "imgurl": [
+            "/work/manual-awning/a3.jpg",
+            "/work/manual-awning/a4.jpg"
+        ]
     },
     {
         "id": "retractable-awning",
@@ -57,7 +63,11 @@
             "Result - Transformed the patio into a year-round usable space with flexible shading.",
             "Testimonial - It’s amazing how easy it is to use—the perfect addition to our outdoor area!"
         ],
-        "imgurl": "/work/retractable-awning/a2.jpg"
+        "imgurl": [
+            "/work/retractable-awning/a1.jpg",
+            "/work/retractable-awning/a2.jpg",
+            "/work/retractable-awning/a6.jpg"
+        ]
     },
     {
         "id": "motorized-awning",
@@ -77,7 +87,9 @@
             "Result - Effortless shade at the touch of a button, enhancing outdoor living.",
             "Testimonial - It’s so convenient! We use our terrace more than ever thanks to the motorized awning"
         ],
-        "imgurl": "/work/motorized-awning/a15.jpg"
+        "imgurl": [
+            "/work/motorized-awning/a15.jpg"
+        ]
     },
     {
         "id": "restaurant-awning",
@@ -97,6 +109,8 @@
           "Result - Increased seating by 30% and improved overall customer experience.",
           "Testimonial - Our outdoor area is always full, rain or shine. Customers love the ambiance!"
         ],
-        "imgurl": "/work/restaurant-awning/3.jpg"
+        "imgurl": [
+            "/work/restaurant-awning/3.jpg"
+        ]
     }
 ]
