@@ -19,6 +19,7 @@ export default async function WorkPage(props: any) {
     notFound();
   }
 
+
   return (
     <>
       <PageIntro eyebrow="Our work" title={work.title}>

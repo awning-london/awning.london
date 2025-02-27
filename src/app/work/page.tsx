@@ -28,11 +28,11 @@ export default async function Work() {
         </p>
       </PageIntro>
 
-      <Container className='flex justify-center items-center'>
+      <Container className='flex justify-center items-center text-center md:text-left'>
         {works.map(caseStudy => (
-            <div key={caseStudy.id} className='flex justify-between items-center my-10 md:flex-row flex-col'>
+            <div key={caseStudy.id} className='flex justify-between items-center my-20 pb-5 md:flex-row flex-col border-b border-sky-600'>
               <Image
-                src={caseStudy.imgurl}
+                src={caseStudy.imgurl[0]}
                 className='rounded-4xl'
                 width={300}
                 height={300}
