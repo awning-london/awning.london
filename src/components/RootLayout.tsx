@@ -117,7 +117,7 @@ function NavigationItem({
   return (
     <Link
       href={href}
-      className="group relative isolate -mx-6 bg-sky-600 px-6 py-4 even:mt-px sm:mx-0 sm:px-0 sm:py-10 sm:odd:pr-16 sm:even:mt-0 sm:even:border-l sm:even:border-neutral-800 sm:even:pl-16"
+      className="group relative isolate -mx-6 bg-sky-600 px-6 py-4 even:mt-px sm:mx-0 sm:px-0 sm:py-10 sm:odd:pr-16 sm:even:mt-0 sm:even:border-l sm:even:border-sky-500 sm:even:pl-16"
     >
       {children}
       <span className="absolute inset-y-0 -z-10 w-screen bg-sky-500 opacity-0 transition group-odd:right-0 group-even:left-0 group-hover:opacity-100" />
@@ -131,6 +131,10 @@ function Navigation() {
       <NavigationRow>
         <NavigationItem href="/work">Our Work</NavigationItem>
         <NavigationItem href="/about">About Us</NavigationItem>
+      </NavigationRow>
+      <NavigationRow>
+        <NavigationItem href="/serives">Services</NavigationItem>
+        <NavigationItem href="/installation-process">Process</NavigationItem>
       </NavigationRow>
     </nav>
   )
