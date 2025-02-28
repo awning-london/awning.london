@@ -6,6 +6,13 @@ import ScrollButton from "@/components/ScrollButton"
 import { ContactSection } from "@/components/ContactSection"
 import { Container } from "@/components/Container"
 import { Suspense } from "react"
+import { Metadata } from "next"
+
+export const metadata: Metadata = {
+  title: 'Awning Color Visualizer | Choose Your Perfect Awning Shade In London',
+  description:
+    'Explore our premium awning color palette and visualize your ideal awning. Select from a wide range of shades to match your style and see it in action with our interactive tool.',
+}
 
 export default function ColorPalettePage() {
   return (
