@@ -196,7 +196,6 @@ export default function Page() {
       <Testimonial title='What Our London Customers Say' className="mt-6 sm:mt-8 md:mt-12 mb-20">
         Fixed my shop awning in record time – fantastic service!
       </Testimonial>
-
       <ContactSection />
       <ScrollButton/>
     </>

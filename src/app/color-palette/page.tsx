@@ -28,19 +28,15 @@ export default function ColorPalettePage() {
       <Container>
         <div className="flex justify-center flex-col gap-8 mt-14">
             <div className="lg:col-span-2">
-            <Card>
-                <CardHeader>
-                <CardTitle>Awning Preview</CardTitle>
+                <CardHeader className="pb-4 md:pb-6">
+                <CardTitle className="text-xl md:text-2xl">Awning Preview</CardTitle>
                 <CardDescription>See how your awning will look with different colors</CardDescription>
                 </CardHeader>
-                <CardContent>
                 <Suspense fallback={<div>Loading visualizer...</div>}>
                   <AwningVisualizer />
                 </Suspense>
-                </CardContent>
-            </Card>
             </div>
-            <div>
+            <div className="space-y-4 md:space-y-8">
             <Card>
                 <CardHeader>
                   <CardTitle>Color Options</CardTitle>
