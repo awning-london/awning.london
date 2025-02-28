@@ -5,6 +5,7 @@ import { PageIntro } from "@/components/PageIntro"
 import ScrollButton from "@/components/ScrollButton"
 import { ContactSection } from "@/components/ContactSection"
 import { Container } from "@/components/Container"
+import { Suspense } from "react"
 
 export default function ColorPalettePage() {
   return (
@@ -26,18 +27,22 @@ export default function ColorPalettePage() {
                 <CardDescription>See how your awning will look with different colors</CardDescription>
                 </CardHeader>
                 <CardContent>
-                <AwningVisualizer />
+                <Suspense fallback={<div>Loading visualizer...</div>}>
+                  <AwningVisualizer />
+                </Suspense>
                 </CardContent>
             </Card>
             </div>
             <div>
             <Card>
                 <CardHeader>
-                <CardTitle>Color Options</CardTitle>
-                <CardDescription>Click on a color to see it applied to the awning</CardDescription>
+                  <CardTitle>Color Options</CardTitle>
+                  <CardDescription>Click on a color to see it applied to the awning</CardDescription>
                 </CardHeader>
                 <CardContent>
-                <ColorPalette />
+                  <Suspense fallback={<div>Loading colors...</div>}>
+                    <ColorPalette />
+                  </Suspense>
                 </CardContent>
             </Card>
             </div>
