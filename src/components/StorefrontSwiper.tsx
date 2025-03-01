@@ -3,13 +3,13 @@
 import Image from 'next/image'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Autoplay, Navigation, Pagination } from 'swiper/modules'
-import { images } from '@/components/Images'
+import { images } from '@/components/storefrontImages'
 import 'swiper/css'
 import 'swiper/css/navigation'
 import 'swiper/css/pagination'
 import { FadeIn } from './FadeIn'
 
-export default function Page() {
+export default function StorefrontSwiper() {
   return (
     <section className='my-4 mx-auto max-w-7xl px-2 lg:px-4'>
         <FadeIn className="flex items-center gap-x-2">

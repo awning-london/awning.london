@@ -13,6 +13,7 @@ import { TiTick } from 'react-icons/ti'
 import clsx from 'clsx'
 import { Button } from '@/components/Button'
 import { Testimonial } from '@/components/Testimonial'
+import StorefrontSwiper from '@/components/storefrontSwiper'
 
 const choosen = [
     ['Local Expertise'],
@@ -161,7 +162,7 @@ function Services() {
         <Button href="/contact" invert={false}>
           Contact Us
         </Button>
-        <Button href="tel:+44 7777 602125" invert={true} className='border border-sky-200'>
+        <Button href="tel:+44 7777 602125" invert={true} className='border border-sky-400'>
           Call Us
         </Button>
       </div>
@@ -171,20 +172,31 @@ function Services() {
 
 
 export const metadata: Metadata = {
-  title: 'Awning, Canopy & Engine Repairs in London | Awning.London',
+  title: 'Custom Storefront Signs in London | Eye-Catching Business Signage',
   description:
-    'Need awning, canopy, or engine repairs in London? [Your Business Name] offers fast, expert repair services. Get a free quote today!',
+    'Discover high-quality, custom storefront signs in London designed to enhance your brand visibility. From illuminated signs to 3D lettering, we create standout signage for businesses of all sizes.',
 }
 
 export default function Page() {
   return (
     <>
-      <PageIntro eyebrow="Our Repair" title="Expert Awning, Canopy & Engine Repair Services in London">
+      <PageIntro eyebrow="Storefront Signs" title="Complete Guide to Storefront Signs">
         <p>
-            Need reliable awning, canopy, or engine repairs in London? Our expert team offers fast, affordable repair services across the city. Contact us today!
+            Your storefront sign is the face of your business, attracting customers and reinforcing your brand. With many options available, choosing the right design ensures a smart investment that makes a lasting impression.
         </p>
+        <p>
+            Need help? Call us for a free consultation today!
+        </p>
+        <div className='flex gap-4 mt-5'>
+            <Button href="/contact" invert={false}>
+            Contact Us
+            </Button>
+            <Button href="tel:+44 7777 602125" invert={true} className='border border-sky-200 '>
+                Call Us
+            </Button>
+        </div>
       </PageIntro>
-
+      <StorefrontSwiper/>
       <section className='mt-10'>
         <WhyChoose />
       </section>
