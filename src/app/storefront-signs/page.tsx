@@ -5,8 +5,7 @@ import { FadeIn, FadeInStagger } from '@/components/FadeIn'
 import { List, ListItem } from '@/components/List'
 import { PageIntro } from '@/components/PageIntro'
 import { StylizedImage } from '@/components/StylizedImage'
-import repair from '@/images/awning-fix.jpg'
-import img from '@/images/a22.jpg'
+import img from '@/images/storefront/7.jpg'
 import ScrollButton from '@/components/ScrollButton'
 import { SectionIntro } from '@/components/SectionIntro'
 import { TiTick } from 'react-icons/ti'
@@ -90,45 +89,27 @@ function WhyChoose() {
   )
 }
 
-function Consultation() {
-  return (
-    <SectionIntro
-        eyebrow=""
-        title="Trusted Repair Services for Awnings, Canopies, and Engines in London"
-        className="mt-10 sm:mt-12 md:mt-20"
-      >
-        <p>
-            Your go-to solution for professional repair services in London. Whether your awning or canopy has seen better days or your engine needs urgent attention, our skilled technicians are here to help. With years of experience and a commitment to quality, we deliver fast, reliable repairs that get you back on track. Based in London, we proudly serve homes and businesses across the city.
-        </p>
-      </SectionIntro>
-  )
-}
 
 function Process() {
   return (
-    <Section title="How Our Repair Service Works" image={{ src: img }}>
+    <Section title="Types of Storefront Signs We Offer" image={{ src: img }}>
       <List className="mt-8 mb-10 lg:mt-0 lg:w-1/2 lg:min-w-[33rem] lg:pl-4">
-        <ListItem title="Contact Us">
-            Call or fill out our online form to describe your repair needs.
+        <ListItem title="Illuminated Signs">
+            LED, neon, backlit signage for 24/7 visibility.
         </ListItem>
-        <ListItem title="Assessment">
-            We’ll evaluate the damage and provide a free, no-obligation quote.
+        <ListItem title="3D Lettering & Channel Letters">
+            Raised letters for a professional look.
         </ListItem>
-        <ListItem title="Repair">
-            Our team gets to work, using top-quality materials and techniques.
+        <ListItem title="Projecting & Hanging Signs">
+            Great for attracting foot traffic.
         </ListItem>
-        <ListItem title="Completion">
-            Your awning, canopy, or engine is back in action, good as new!
+        <ListItem title="Vinyl & Window Graphics">
+            Cost-effective branding solutions.
+        </ListItem>
+        <ListItem title="Metal & Acrylic Signs">
+            Durable, stylish, and weather-resistant.
         </ListItem>
       </List>
-      <div className='flex flex-row gap-4'>
-        <Button href="/contact" invert={false}>
-          Contact Us
-        </Button>
-        <Button href="tel:+44 7777 602125" invert={true} className='border border-sky-400'>
-          Call Us
-        </Button>
-      </div>
     </Section>
   )
 }
@@ -137,36 +118,14 @@ function Location() {
   return (
     <SectionIntro
         eyebrow=""
-        title="Serving All of London with Expert Repairs"
+        title="Make a Bold First Impression with Custom Storefront Signs"
         className="mt-10 sm:mt-12 md:mt-20"
       >
         <p>
-            No matter where you are in London – from Camden to Croydon, Islington to Greenwich – we’re ready to assist. Our mobile repair team brings the tools and expertise directly to you, or you can visit our workshop for more complex fixes.
+            Overview of storefront signs and their impact on branding & visibility.
+            Benefits of a well-designed storefront sign for businesses.
         </p>
       </SectionIntro>
-  )
-}
-
-function Services() {
-  return (
-    <Section title="How Our Repair Service Works" image={{ src: repair }}>
-      <List className="mt-8 mb-10 lg:mt-0 lg:w-1/2 lg:min-w-[33rem] lg:pl-4">
-        <ListItem title="Awning & Canopy Repairs">
-        Damaged fabric, broken frames, or faulty mechanisms? We fix all types of awnings and canopies, from shopfronts to garden setups. Our team restores functionality and appearance, ensuring durability against London’s unpredictable weather.
-        </ListItem>
-        <ListItem title="Engine Repairs">
-        From small machinery to vehicle engines, we diagnose and repair issues quickly and efficiently. Our expertise covers everything from routine maintenance to complex engine faults, keeping your equipment running smoothly.
-        </ListItem>
-      </List>
-      <div className='flex flex-row gap-4'>
-        <Button href="/contact" invert={false}>
-          Contact Us
-        </Button>
-        <Button href="tel:+44 7777 602125" invert={true} className='border border-sky-400'>
-          Call Us
-        </Button>
-      </div>
-    </Section>
   )
 }
 
@@ -196,17 +155,19 @@ export default function Page() {
             </Button>
         </div>
       </PageIntro>
-      <StorefrontSwiper/>
+      <section className='my-14'>
+        <StorefrontSwiper/>
+      </section>
       <section className='mt-10'>
         <WhyChoose />
       </section>
 
-      <Consultation />
-      <Services  />
       <Location  />
-      <Process />
+      <section className='my-14'>
+        <Process />
+      </section>
       <Testimonial title='What Our London Customers Say' className="mt-6 sm:mt-8 md:mt-12 mb-20">
-        Fixed my shop awning in record time – fantastic service!
+        Positive reviews from business owners who upgraded their storefront signs.
       </Testimonial>
       <ContactSection />
       <ScrollButton/>
