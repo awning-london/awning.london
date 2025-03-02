@@ -166,9 +166,9 @@ function Types() {
 
 
 export const metadata: Metadata = {
-  title: 'Awning, Canopy & Engine Repairs in London | Awning.London',
+  title: 'Choosing the Right Awning – Material, Size & Climate Considerations',
   description:
-    'Need awning, canopy, or engine repairs in London? [Your Business Name] offers fast, expert repair services. Get a free quote today!',
+    'Find the perfect awning for your home by considering material, size, and climate suitability. Get expert advice to ensure durability, coverage, and long-term protection.',
 }
 
 export default function Page() {
