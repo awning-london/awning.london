@@ -5,8 +5,8 @@ import { FadeIn, FadeInStagger } from '@/components/FadeIn'
 import { List, ListItem } from '@/components/List'
 import { PageIntro } from '@/components/PageIntro'
 import { StylizedImage } from '@/components/StylizedImage'
-import repair from '@/images/awning-fix.jpg'
-import img from '@/images/a22.jpg'
+import repair from '@/images/work/6.jpg'
+import img from '@/images/work/10.jpg'
 import ScrollButton from '@/components/ScrollButton'
 import { SectionIntro } from '@/components/SectionIntro'
 import { TiTick } from 'react-icons/ti'
@@ -14,13 +14,10 @@ import clsx from 'clsx'
 import { Button } from '@/components/Button'
 import { Testimonial } from '@/components/Testimonial'
 
-const choosen = [
-    ['Local Expertise'],
-    ['Fast Turnaround'],
-    ['Affordable Pricing'],
-    ['Survey and Fitting'],
-    ['Experienced Team'],
-    ['Customer Satisfaction'],
+const benefits = [
+    ['Energy Efficiency'],
+    ['Enhanced Outdoor Living'],
+    ['Property Value'],
   ]
 
 function Section({
@@ -61,13 +58,13 @@ function Section({
   )
 }
 
-function WhyChoose() {
+function BenefitsOfAwning() {
   return (
     <div className="mx-2 rounded-4xl bg-sky-600 py-8 sm:mt-6 sm:py-10 lg:mt-6">
       <Container>
         <div className="flex items-center gap-x-2">
           <h2 className="text-center font-display text-sm font-semibold tracking-wider text-white sm:text-left">
-            Why Choose Our Awnings?
+            Why Installing Awning Have Benefits
           </h2>
           <div className="h-px flex-auto bg-sky-500" />
         </div>
@@ -76,7 +73,7 @@ function WhyChoose() {
             role="list"
             className="mt-4 grid grid-cols-1 md:grid-cols-2 gap-x-2 gap-y-1 lg:grid-cols-3 text-white"
           >
-            {choosen.map(([item]) => (
+            {benefits.map(([item]) => (
               <li key={item} className={clsx('flex items-center ')}>
                 <TiTick size={20}/>
                 {item}
@@ -93,37 +90,32 @@ function Consultation() {
   return (
     <SectionIntro
         eyebrow=""
-        title="Trusted Repair Services for Awnings, Canopies, and Engines in London"
+        title="The Importance of Awnings"
         className="mt-10 sm:mt-12 md:mt-20"
       >
         <p>
-            Your go-to solution for professional repair services in London. Whether your awning or canopy has seen better days or your engine needs urgent attention, our skilled technicians are here to help. With years of experience and a commitment to quality, we deliver fast, reliable repairs that get you back on track. Based in London, we proudly serve homes and businesses across the city.
+            Awnings are a valuable addition to any home, enhancing outdoor living spaces by providing essential shade, protecting against harsh weather conditions, and adding aesthetic appeal. They help create a comfortable area for relaxation, shielding patios, decks, and windows from excessive sunlight and rain. Beyond comfort, awnings also contribute to energy efficiency by reducing indoor temperatures, leading to lower cooling costs.
         </p>
       </SectionIntro>
   )
 }
 
-function Process() {
+function Factors() {
   return (
-    <Section title="How Our Repair Service Works" image={{ src: img }}>
+    <Section title="Factors to Consider When Choosing an Awning" image={{ src: img }}>
       <List className="mt-8 mb-10 lg:mt-0 lg:w-1/2 lg:min-w-[33rem] lg:pl-4">
-        <ListItem title="Contact Us">
-            Call or fill out our online form to describe your repair needs.
+        <ListItem title="Material">
+            Choose from durable options like polyester, acrylic, or metal. Fabrics offer weather resistance and easy maintenance, while metal provides strength and long-lasting protection.
         </ListItem>
-        <ListItem title="Assessment">
-            We’ll evaluate the damage and provide a free, no-obligation quote.
+        <ListItem title="Size and Coverage">
+            Properly measure your space to ensure the awning provides sufficient shade and protection for patios, windows, or balconies.
         </ListItem>
-        <ListItem title="Repair">
-            Our team gets to work, using top-quality materials and techniques.
-        </ListItem>
-        <ListItem title="Completion">
-            Your awning, canopy, or engine is back in action, good as new!
+        <ListItem title="Climate Considerations">
+            Select an awning that can withstand local weather, with wind-resistant features for windy areas and proper drainage for heavy rain.
         </ListItem>
       </List>
-      <div className='flex flex-row gap-4'>
-        <Button href="/contact" invert={false}>
-          Contact Us
-        </Button>
+      <div className='flex flex-col justify-center items-start gap-4'>
+        <p className='text-sky-700'>Get expert advice to find the perfect fit for your needs—contact us today!</p>
         <Button href="tel:+44 7777 602125" invert={true} className='border border-sky-200'>
           Call Us
         </Button>
@@ -136,25 +128,28 @@ function Location() {
   return (
     <SectionIntro
         eyebrow=""
-        title="Serving All of London with Expert Repairs"
+        title="Choosing the Right Awning for Your Space"
         className="mt-10 sm:mt-12 md:mt-20"
       >
         <p>
-            No matter where you are in London – from Camden to Croydon, Islington to Greenwich – we’re ready to assist. Our mobile repair team brings the tools and expertise directly to you, or you can visit our workshop for more complex fixes.
+            Selecting the perfect awning involves more than just style—it’s about durability, functionality, and suitability for your environment. The right choice enhances comfort, protects against the elements, and adds aesthetic appeal to your home or business.
         </p>
       </SectionIntro>
   )
 }
 
-function Services() {
+function Types() {
   return (
-    <Section title="How Our Repair Service Works" image={{ src: repair }}>
+    <Section title="Types of Awnings" image={{ src: repair }}>
       <List className="mt-8 mb-10 lg:mt-0 lg:w-1/2 lg:min-w-[33rem] lg:pl-4">
-        <ListItem title="Awning & Canopy Repairs">
-        Damaged fabric, broken frames, or faulty mechanisms? We fix all types of awnings and canopies, from shopfronts to garden setups. Our team restores functionality and appearance, ensuring durability against London’s unpredictable weather.
+        <ListItem title="Retractable Awnings">
+            Flexible and space-saving, these awnings extend for shade and retract when not needed, ideal for patios and decks.
         </ListItem>
-        <ListItem title="Engine Repairs">
-        From small machinery to vehicle engines, we diagnose and repair issues quickly and efficiently. Our expertise covers everything from routine maintenance to complex engine faults, keeping your equipment running smoothly.
+        <ListItem title="Fixed Awnings">
+            Permanently installed for continuous protection, they add style while shielding windows and doors from the elements.
+        </ListItem>
+        <ListItem title="Motorized Awnings">
+            Effortless control with remote or smart devices, offering instant shade and weather-responsive automation.
         </ListItem>
       </List>
       <div className='flex flex-row gap-4'>
@@ -179,22 +174,22 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <>
-      <PageIntro eyebrow="Our Repair" title="Expert Awning, Canopy & Engine Repair Services in London">
+      <PageIntro eyebrow="Best Awnings for Homes" title="Choosing the Right Shade Solution">
         <p>
-            Need reliable awning, canopy, or engine repairs in London? Our expert team offers fast, affordable repair services across the city. Contact us today!
+            how awnings enhance outdoor living spaces by providing shade, protection from the elements, and aesthetic appeal?
         </p>
       </PageIntro>
 
       <section className='mt-10'>
-        <WhyChoose />
+        <BenefitsOfAwning />
       </section>
 
       <Consultation />
-      <Services  />
+      <Types  />
       <Location  />
-      <Process />
-      <Testimonial title='What Our London Customers Say' className="mt-6 sm:mt-8 md:mt-12 mb-20">
-        Fixed my shop awning in record time – fantastic service!
+      <Factors />
+      <Testimonial title='Making the Right Choice' className="mt-6 sm:mt-8 md:mt-12 mb-20">
+        We needed the perfect awning for shade and style. With expert guidance, we found a durable, weather-resistant solution that fits our space beautifully. If you&apos;re unsure, consult the professionals—they made it easy for us!
       </Testimonial>
       <ContactSection />
       <ScrollButton/>
