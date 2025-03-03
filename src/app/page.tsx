@@ -14,6 +14,7 @@ import ScrollButton from '@/components/ScrollButton';
 import { Button } from '@/components/Button';
 import Review from '@/components/Review';
 import FixLink from '@/components/FixLink';
+import PaletteSwiper from '@/components/PaletteSwiper';
 
 
 const features = [
@@ -161,6 +162,22 @@ export default async function Home() {
       <Services />
       <Review />
       <FixLink />
+
+      <SectionIntro
+                eyebrow="Our Color & Palette"
+                title="Try what Color fit to your Awning"
+                className="mt-10 sm:mt-12 md:mt-20"
+        >
+          <p>
+            We offer a wide range of services to meet your needs, including custom-designed awnings, 
+            retractable awnings, fixed awnings, and motorized awnings.
+          </p>
+          <Button href="/color-palette" invert={false} className='mt-5'>
+            Try it
+          </Button>
+        </SectionIntro>
+      <PaletteSwiper />
+      
       <ContactSection />
       <ScrollButton />
     </>
