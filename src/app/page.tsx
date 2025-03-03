@@ -6,13 +6,13 @@ import { FadeIn, FadeInStagger } from '@/components/FadeIn'
 import { List, ListItem } from '@/components/List'
 import { SectionIntro } from '@/components/SectionIntro'
 import { StylizedImage } from '@/components/StylizedImage'
-import { Testimonial } from '@/components/Testimonial'
-import awnSample from '@/images/awn.jpg'
+import awnSample from '@/images/work/11.jpg'
 import clsx from 'clsx';
 import SwiperSlides from '@/components/SwiperSlides'
 import CustomLink from '@/components/CustomLink';
 import ScrollButton from '@/components/ScrollButton';
 import { Button } from '@/components/Button';
+import Review from '@/components/Review';
 
 const features = [
   ['Custom Designs'],
@@ -25,7 +25,7 @@ const features = [
 
 function Clients() {
   return (
-    <div className="mt-4 mx-2 rounded-4xl bg-sky-600 py-8 sm:mt-6 sm:py-10 lg:mt-6">
+    <div className="mt-10 mx-2 rounded-4xl bg-sky-600 py-8 sm:mt-12 sm:py-10 lg:mt-14">
       <Container>
         <div className="flex items-center gap-x-2">
           <h2 className="text-center font-display text-sm font-semibold tracking-wider text-white sm:text-left">
@@ -153,13 +153,10 @@ export default async function Home() {
         </FadeIn>
       </Container>
       <SwiperSlides/>
-      <Testimonial title='Comments of our customers' className="mt-6 sm:mt-8 md:mt-12 mb-20">
-        Fantastic service! Professional, detail-oriented team. 
-        My awning and garage door look perfect, were installed on time, and at a great price. Highly recommend!
-      </Testimonial>
       <CustomLink />
       <Clients />
       <Services />
+      <Review />
       <ContactSection />
       <ScrollButton />
     </>

@@ -140,7 +140,7 @@ function Location() {
         className="mt-10 sm:mt-12 md:mt-20"
       >
         <p>
-            No matter where you are in London – from Camden to Croydon, Islington to Greenwich – we’re ready to assist. Our mobile repair team brings the tools and expertise directly to you, or you can visit our workshop for more complex fixes.
+          No matter where you are in London – from Camden to Croydon, Islington to Greenwich – we’re ready to assist. Our mobile repair team brings the tools and expertise directly to you, or you can visit our workshop for more complex fixes.
         </p>
       </SectionIntro>
   )
