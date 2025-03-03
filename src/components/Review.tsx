@@ -34,7 +34,7 @@ const review = [
 
 export default function Review() {
   return (
-    <Testimonial title='Our Customer Comment' className="mt-6 sm:mt-8 md:mt-12 mb-20">
+    
       <Swiper
         autoplay={{
           delay:5000,
@@ -52,13 +52,12 @@ export default function Review() {
         }}
       >
         {review.map((item, index) => (
-          <SwiperSlide key={index}>
-            <div key={index}>
+          <SwiperSlide key={index} className="mt-6 sm:mt-8 md:mt-12 mb-20">
+            <Testimonial title='Our Customer Comment' >
                 {item.desc} - {item.from}
-            </div>
+            </Testimonial>
           </SwiperSlide>
         ))}
       </Swiper>
-    </Testimonial>
   )
 }

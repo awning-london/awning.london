@@ -14,6 +14,7 @@ import ScrollButton from '@/components/ScrollButton';
 import { Button } from '@/components/Button';
 import Review from '@/components/Review';
 
+
 const features = [
   ['Custom Designs'],
   ['Range of Fabrics'],
@@ -22,6 +23,7 @@ const features = [
   ['Professional Installation'],
   ['Sustainable Materials'],
 ]
+
 
 function Clients() {
   return (
