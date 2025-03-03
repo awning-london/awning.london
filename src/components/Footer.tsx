@@ -8,13 +8,13 @@ const navigation = [
   {
     title: 'Work',
     links: [
-      // { title: 'FamilyFund', href: '/work/family-fund' },
-      // { title: 'Unseal', href: '/work/unseal' },
-      // { title: 'Phobia', href: '/work/phobia' },
+      { title: 'Fixed', href: '/work/fixed-awning' },
+      { title: 'Manual', href: '/work/manual-awning' },
+      { title: 'Retractable', href: '/work/retractable-awning' },
       {
         title: (
           <>
-            Gallary <span aria-hidden="true">&rarr;</span>
+            Work <span aria-hidden="true">&rarr;</span>
           </>
         ),
         href: '/work',
@@ -28,11 +28,35 @@ const navigation = [
       { title: 'Contact us', href: '/contact' },
       { title: 'Services', href: '/services' },
       { title: 'Process', href: '/installation-process' },
+      { title: 'Fix & Repair', href: '/fix-repair' },
+      { title: 'Color & Palette', href: '/color-palette' },
+    ],
+  },
+  {
+    title: 'Services',
+    links: [
+      { title: 'Residential', href: '/services/residential-awning' },
+      { title: 'Custom', href: '/services/custom-awning' },
+      {
+        title: (
+          <>
+            Services <span aria-hidden="true">&rarr;</span>
+          </>
+        ),
+        href: '/services',
+      },
     ],
   },
   {
     title: 'Connect',
     links: socialMediaProfiles,
+  },
+  {
+    title: 'Blog',
+    links: [
+      { title: 'Best Choice', href: '/blog/best-awnings-for-homes' },
+      { title: 'Which one is better?', href: '/blog/retractable-vs-fixed-awnings' },
+    ],
   },
 ]
 
