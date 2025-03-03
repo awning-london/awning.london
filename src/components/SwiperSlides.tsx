@@ -11,7 +11,7 @@ import { FadeIn } from './FadeIn'
 
 export default function Page() {
   return (
-    <section className='my-4 mx-auto max-w-7xl px-2 lg:px-4'>
+    <section className='my-20 mx-auto max-w-7xl px-2 lg:px-4'>
         <FadeIn className="flex items-center gap-x-2">
           
         <Swiper

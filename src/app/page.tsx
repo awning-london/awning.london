@@ -13,6 +13,7 @@ import CustomLink from '@/components/CustomLink';
 import ScrollButton from '@/components/ScrollButton';
 import { Button } from '@/components/Button';
 import Review from '@/components/Review';
+import FixLink from '@/components/FixLink';
 
 
 const features = [
@@ -159,6 +160,7 @@ export default async function Home() {
       <Clients />
       <Services />
       <Review />
+      <FixLink />
       <ContactSection />
       <ScrollButton />
     </>
