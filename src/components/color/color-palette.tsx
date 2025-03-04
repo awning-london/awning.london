@@ -15,7 +15,7 @@ const colorOptions = [
   { name: "Orange", value: "#EA5211" },
   { name: "Salmon", value: "#CD5B5A" },
   { name: "Red", value: "#B52131" },
-  { name: "Vermillion", value: "#941327" },
+  { name: "Vermilion", value: "#941327" },
   { name: "Burgundy", value: "#681C28" },
   { name: "Mauve", value: "#624353" },
   { name: "Lilly", value: "#AEA7EA" },
