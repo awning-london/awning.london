@@ -129,7 +129,7 @@ function Services() {
 }
 
 export const metadata: Metadata = {
-  title: 'Awning London | Stylish, Durable, Cheap Awnings for Londoners',
+  title: 'Awning London | Stylish & Affordable Awnings in London',
   description:
     'Discover premium awning solutions in London. Awning London offers high-quality retractable, fixed, and motorized awnings to enhance your outdoor spaces with style and comfort. Contact us today!',
 }
