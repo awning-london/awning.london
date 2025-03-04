@@ -169,8 +169,7 @@ export default async function Home() {
                 className="mt-10 sm:mt-12 md:mt-20"
         >
           <p>
-            We offer a wide range of services to meet your needs, including custom-designed awnings, 
-            retractable awnings, fixed awnings, and motorized awnings.
+            Explore a wide range of colors to match your style and brand. From bold shades to subtle tones, find the perfect palette for your project.
           </p>
           <Button href="/color-palette" invert={false} className='mt-5'>
             Try it
