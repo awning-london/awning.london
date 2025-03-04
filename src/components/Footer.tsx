@@ -58,6 +58,12 @@ const navigation = [
       { title: 'Which one is better?', href: '/blog/retractable-vs-fixed-awnings' },
     ],
   },
+  {
+    title: 'Other',
+    links: [
+      { title: 'Storefront Sign', href: '/storefront-signs' },
+    ],
+  },
 ]
 
 function Navigation() {
