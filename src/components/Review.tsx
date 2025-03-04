@@ -53,7 +53,7 @@ export default function Review() {
       >
         {review.map((item, index) => (
           <SwiperSlide key={index} className="mt-6 sm:mt-8 md:mt-12 mb-20">
-            <Testimonial title='Our Customer Comment' >
+            <Testimonial title={item.title} >
                 {item.desc} - {item.from}
             </Testimonial>
           </SwiperSlide>
