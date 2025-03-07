@@ -13,7 +13,7 @@ import { TiTick } from 'react-icons/ti'
 import clsx from 'clsx'
 import { Button } from '@/components/Button'
 import { Testimonial } from '@/components/Testimonial'
-import FixSlider from '@/components/fixSlider'
+import FixSlider from '@/components/FixSwiper'
 
 const choosen = [
     ['Local Expertise'],
