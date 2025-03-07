@@ -27,7 +27,7 @@ function InstagramIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
 
 export const socialMediaProfiles = [
   { title: 'Facebook', href: 'https://facebook.com/awning_london', icon: FacebookIcon },
-  { title: 'Instagram', href: 'https://instagram.com/awning_london', icon: InstagramIcon },
+  { title: 'Instagram', href: 'https://instagram.com/ftk1513', icon: InstagramIcon },
 ]
 
 export function SocialMedia({
