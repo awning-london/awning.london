@@ -9,7 +9,7 @@ import 'swiper/css/navigation'
 import 'swiper/css/pagination'
 import { FadeIn } from './FadeIn'
 
-export default function FixSlider() {
+export default function fixSlider() {
   return (
     <section className='my-20 mx-auto max-w-7xl px-2 lg:px-4'>
         <FadeIn className="flex items-center gap-x-2">
