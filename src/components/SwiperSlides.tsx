@@ -40,9 +40,7 @@ export default function SwiperSlides() {
               slidesPerView: 4,
               spaceBetween: 10,
             },
-          }}
-          
-        >
+          }}>
           {images.map((image, index) => (
             <SwiperSlide key={index}>
               <div className='flex h-full w-full items-center justify-center'>
