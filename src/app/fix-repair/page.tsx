@@ -13,6 +13,7 @@ import { TiTick } from 'react-icons/ti'
 import clsx from 'clsx'
 import { Button } from '@/components/Button'
 import { Testimonial } from '@/components/Testimonial'
+import FixSlider from '@/components/fixSlider'
 
 const choosen = [
     ['Local Expertise'],
@@ -184,6 +185,8 @@ export default function Page() {
             Need reliable awning, canopy, or engine repairs in London? Our expert team offers fast, affordable repair services across the city. Contact us today!
         </p>
       </PageIntro>
+
+      <FixSlider />
 
       <section className='mt-10'>
         <WhyChoose />

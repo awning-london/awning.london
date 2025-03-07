@@ -9,6 +9,9 @@ import eighth from '@/images/work/8.jpg'
 import nineth from '@/images/work/9.jpg'
 import tenth from '@/images/work/10.jpg'
 import eleventh from '@/images/work/11.jpg'
+import fix1 from '@/images/awn-fix1.jpg'
+import fix2 from '@/images/awn-fix2.jpg'
+import fix3 from '@/images/awn-fix3.jpg'
 
 export const images = [
   { src: first, alt: 'Best Awning in CentralLondon' },
@@ -22,4 +25,10 @@ export const images = [
   { src: nineth, alt: 'Best Awning Prices in London' },
   { src: tenth, alt: 'How to Install Awning in London' },
   { src: eleventh, alt: 'How to Install Awning in London' },
+]
+
+export const fixImages = [
+  { src: fix1, alt: 'fix motor' },
+  { src: fix2, alt: 'fix motor' },
+  { src: fix3, alt: 'fix motor' },
 ]
