@@ -94,11 +94,11 @@ function Consultation() {
   return (
     <SectionIntro
         eyebrow=""
-        title="Trusted Repair Services for Awnings, Canopies, and Engines in London"
+        title="Trusted Repair Services for Awnings, Canopies, and Motors in London"
         className="mt-10 sm:mt-12 md:mt-20"
       >
         <p>
-            Your go-to solution for professional repair services in London. Whether your awning or canopy has seen better days or your engine needs urgent attention, our skilled technicians are here to help. With years of experience and a commitment to quality, we deliver fast, reliable repairs that get you back on track. Based in London, we proudly serve homes and businesses across the city.
+            Your go-to solution for professional repair services in London. Whether your awning or canopy has seen better days or your motor needs urgent attention, our skilled technicians are here to help. With years of experience and a commitment to quality, we deliver fast, reliable repairs that get you back on track. Based in London, we proudly serve homes and businesses across the city.
         </p>
       </SectionIntro>
   )
@@ -118,7 +118,7 @@ function Process() {
             Our team gets to work, using top-quality materials and techniques.
         </ListItem>
         <ListItem title="Completion">
-            Your awning, canopy, or engine is back in action, good as new!
+            Your awning, canopy, or motor is back in action, good as new!
         </ListItem>
       </List>
       <div className='flex flex-row gap-4'>
@@ -154,8 +154,8 @@ function Services() {
         <ListItem title="Awning & Canopy Repairs">
         Damaged fabric, broken frames, or faulty mechanisms? We fix all types of awnings and canopies, from shopfronts to garden setups. Our team restores functionality and appearance, ensuring durability against London’s unpredictable weather.
         </ListItem>
-        <ListItem title="Engine Repairs">
-        From small machinery to vehicle engines, we diagnose and repair issues quickly and efficiently. Our expertise covers everything from routine maintenance to complex engine faults, keeping your equipment running smoothly.
+        <ListItem title="Motor Repairs">
+        From small machinery to vehicle motors, we diagnose and repair issues quickly and efficiently. Our expertise covers everything from routine maintenance to complex motor faults, keeping your equipment running smoothly.
         </ListItem>
       </List>
       <div className='flex flex-row gap-4'>
@@ -172,17 +172,17 @@ function Services() {
 
 
 export const metadata: Metadata = {
-  title: 'Awning, Canopy & Engine Repairs in London | Awning.London',
+  title: 'Awning, Canopy & Motor Repairs in London | Awning.London',
   description:
-    'Need awning, canopy, or engine repairs in London? [Your Business Name] offers fast, expert repair services. Get a free quote today!',
+    'Need awning, canopy, or motor repairs in London? [Your Business Name] offers fast, expert repair services. Get a free quote today!',
 }
 
 export default function Page() {
   return (
     <>
-      <PageIntro eyebrow="Our Repair" title="Expert Awning, Canopy & Engine Repair Services in London">
+      <PageIntro eyebrow="Our Repair" title="Expert Awning, Canopy & Motor Repair Services in London">
         <p>
-            Need reliable awning, canopy, or engine repairs in London? Our expert team offers fast, affordable repair services across the city. Contact us today!
+            Need reliable awning, canopy, or motor repairs in London? Our expert team offers fast, affordable repair services across the city. Contact us today!
         </p>
       </PageIntro>
 
