@@ -52,7 +52,7 @@ export default function CustomLink() {
         <ListItem title="Awning & Canopy Repairs">
           Enhance your space with a custom awning designed to match your style and needs. Choose from various materials, colors, and designs for the perfect fit.
         </ListItem>
-        <ListItem title="Engine Repairs">
+        <ListItem title="Motor Repairs">
           Looking for a unique shade solution? Our custom awnings offer tailored designs for homes and businesses, providing both function and style.
         </ListItem>
       </List>

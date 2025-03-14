@@ -52,7 +52,7 @@ export default function FixLink() {
         <ListItem title="Awning & Canopy Repairs">
             Get professional awning repair services in London to fix damage, wear, or mechanical issues. We restore retractable, fixed, and motorized awnings for homes and businesses. Contact us for a quick and reliable fix!
         </ListItem>
-        <ListItem title="Engine Repairs">
+        <ListItem title="Motor Repairs">
             Over time, awnings can experience wear and tear due to weather exposure or mechanical faults. Our awning repair services ensure your awning remains in top condition, extending its lifespan and maintaining its functionality. Whether it&apos;s fabric replacement, frame repair, or motor issues, our experts provide fast and reliable solutions.
         </ListItem>
       </List>
