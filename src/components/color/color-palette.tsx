@@ -94,11 +94,12 @@ export default function ColorPalette() {
         if (color.type === "solid") {
           swatchStyle.backgroundColor = color.value
         } else if (color.type === "stripe") {
+          const colors = color.colors ?? ["#000", "#fff"]
           swatchStyle.backgroundImage = `repeating-linear-gradient(0deg, 
-            ${color.colors[0]} 0px, 
-            ${color.colors[0]} 10px, 
-            ${color.colors[1]} 10px, 
-            ${color.colors[1]} 20px)`
+            ${colors[0]} 0px, 
+            ${colors[0]} 10px, 
+            ${colors[1]} 10px, 
+            ${colors[1]} 20px)`
         }
 
         return (
