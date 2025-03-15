@@ -3,18 +3,43 @@
 import { useEffect, useState } from "react"
 import { useSearchParams } from "next/navigation"
 
+type ColorInfo = {
+  type: "solid" | "stripe"
+  colors: string[]
+  stripeWidth?: string
+}
+
 export default function AwningVisualizer() {
   const searchParams = useSearchParams()
-  const [awningColor, setAwningColor] = useState("#E63946")
+  const [awningColor, setAwningColor] = useState<string>("#E63946")
+  const [colorInfo, setColorInfo] = useState<ColorInfo>({
+    type: "solid",
+    colors: ["#E63946"],
+  })
 
   useEffect(() => {
-    const color = searchParams.get("color")
+    const color = searchParams.get("color") || awningColor
 
-    if (color) {
-      setAwningColor(color)
+    setAwningColor(color)
+
+    if (color.startsWith("stripe:")) {
+      const parts = color.split(":")
+      if (parts.length >= 3) {
+        setColorInfo({
+          type: "stripe",
+          colors: [parts[1], parts[2]],
+          stripeWidth: "40px",
+        })
+      }
+    } else {
+      setColorInfo({
+        type: "solid",
+        colors: [color],
+      })
     }
   }, [searchParams])
 
+  // Color utility functions
   const getDarkerShade = (color: string, amount = 30) => {
     const hex = color.replace("#", "")
     const rgb = Number.parseInt(hex, 16)
@@ -62,33 +87,51 @@ export default function AwningVisualizer() {
           <div
             className="relative h-[min(60px,15vw)] transform preserve-3d"
             style={{
-              background: `linear-gradient(to bottom, ${getLighterShade(awningColor, 20)}, ${awningColor})`,
               transformStyle: "preserve-3d",
               transform: "perspective(1000px) rotateX(-5deg)",
+              ...(colorInfo.type === "solid"
+                ? {
+                    background: `linear-gradient(to bottom, ${getLighterShade(colorInfo.colors[0], 20)}, ${colorInfo.colors[0]})`,
+                  }
+                : {
+                    backgroundImage: `repeating-linear-gradient(0deg, 
+                      ${colorInfo.colors[0]} 0px, 
+                      ${colorInfo.colors[0]} 20px, 
+                      ${colorInfo.colors[1]} 20px, 
+                      ${colorInfo.colors[1]} 40px)`,
+                  }),
             }}
           >
-            <div className="absolute inset-0">
-              {Array.from({ length: 6 }).map((_, i) => (
-                <div
-                  key={i}
-                  className="h-[min(10px,2.5vw)] w-full border-b border-black/10"
-                  style={{
-                    background: `linear-gradient(90deg, transparent, ${getDarkerShade(awningColor, 10)}, transparent)`,
-                  }}
-                ></div>
-              ))}
-            </div>
+            {colorInfo.type === "solid" && (
+              <div className="absolute inset-0">
+                {Array.from({ length: 6 }).map((_, i) => (
+                  <div
+                    key={i}
+                    className="h-[min(10px,2.5vw)] w-full border-b border-black/10"
+                    style={{
+                      background: `linear-gradient(90deg, transparent, ${getDarkerShade(colorInfo.colors[0], 10)}, transparent)`,
+                    }}
+                  ></div>
+                ))}
+              </div>
+            )}
             <div
               className="absolute -left-[min(1rem,2.5vw)] top-0 w-[min(1rem,2.5vw)] h-full"
               style={{
-                background: getDarkerShade(awningColor, 40),
+                background:
+                  colorInfo.type === "solid"
+                    ? getDarkerShade(colorInfo.colors[0], 40)
+                    : getDarkerShade(colorInfo.colors[0], 40),
                 transform: "rotateY(90deg) translateZ(-4px)",
               }}
             ></div>
             <div
               className="absolute -right-[min(1rem,2.5vw)] top-0 w-[min(1rem,2.5vw)] h-full"
               style={{
-                background: getDarkerShade(awningColor, 40),
+                background:
+                  colorInfo.type === "solid"
+                    ? getDarkerShade(colorInfo.colors[0], 40)
+                    : getDarkerShade(colorInfo.colors[0], 40),
                 transform: "rotateY(-90deg) translateZ(-4px)",
               }}
             ></div>
@@ -97,10 +140,18 @@ export default function AwningVisualizer() {
             <div
               className="w-full h-[min(20px,5vw)]"
               style={{
-                background: getDarkerShade(awningColor, 20),
                 clipPath:
                   "polygon(0 0, 5% 100%, 10% 0, 15% 100%, 20% 0, 25% 100%, 30% 0, 35% 100%, 40% 0, 45% 100%, 50% 0, 55% 100%, 60% 0, 65% 100%, 70% 0, 75% 100%, 80% 0, 85% 100%, 90% 0, 95% 100%, 100% 0)",
                 filter: "drop-shadow(0 2px 2px rgba(0,0,0,0.2))",
+                ...(colorInfo.type === "solid"
+                  ? { background: getDarkerShade(colorInfo.colors[0], 20) }
+                  : {
+                      backgroundImage: `repeating-linear-gradient(0deg, 
+                        ${colorInfo.colors[0]} 0px, 
+                        ${colorInfo.colors[0]} 10px, 
+                        ${colorInfo.colors[1]} 10px, 
+                        ${colorInfo.colors[1]} 20px)`,
+                    }),
               }}
             >
               <div
@@ -124,14 +175,26 @@ export default function AwningVisualizer() {
             <div className="absolute bottom-0 -left-1 right-[-4px] h-3 bg-stone-800 transform skew-x-45"></div>
           </div>
         </div>
+
         <div className="absolute -z-10 bottom-0 left-1/2 w-[90%] h-[min(1rem,3vw)] bg-black/20 blur-md rounded-full transform -translate-x-1/2"></div>
       </div>
       <div className="absolute bottom-2 md:bottom-4 right-2 md:right-4 bg-white/90 backdrop-blur-sm p-2 rounded-md shadow-lg flex items-center">
-        <div
-          className="w-4 md:w-6 h-4 md:h-6 rounded-full mr-2 shadow-inner"
-          style={{ backgroundColor: awningColor }}
-        ></div>
-        <span className="text-xs md:text-sm font-medium">{awningColor}</span>
+        {colorInfo.type === "solid" ? (
+          <div
+            className="w-4 md:w-6 h-4 md:h-6 rounded-full mr-2 shadow-inner"
+            style={{ backgroundColor: colorInfo.colors[0] }}
+          ></div>
+        ) : (
+          <div
+            className="w-4 md:w-6 h-4 md:h-6 rounded-full mr-2 shadow-inner overflow-hidden"
+            style={{
+              backgroundImage: `linear-gradient(0deg, ${colorInfo.colors[0]} 50%, ${colorInfo.colors[1]} 50%)`,
+            }}
+          ></div>
+        )}
+        <span className="text-xs md:text-sm font-medium">
+          {colorInfo.type === "solid" ? colorInfo.colors[0] : `${colorInfo.colors[0]} & ${colorInfo.colors[1]}`}
+        </span>
       </div>
     </div>
   )
