@@ -32,7 +32,7 @@ export default async function WorkPage(props: any) {
         <p>{work.desc}</p>
       </PageIntro>
       <section className='my-4 mx-auto max-w-7xl px-2 lg:px-4'>
-        <FadeIn className="flex items-center gap-x-2 flex-col md:flex-row gap-5">
+        <FadeIn className="grid grid-cols-2 md:grid-cols-4 gap-x-2 md:flex-row gap-5" >
           {work.imgurl.map((image, index) => (
               <div key={index} className='flex h-full w-full items-center justify-center'>
                 <Image
