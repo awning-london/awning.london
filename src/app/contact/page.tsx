@@ -42,7 +42,7 @@ function ContactDetails() {
         </h2>
         <dl className="mt-2 grid grid-cols-1 gap-8 text-sm sm:grid-cols-2">
           {[
-            ['Contact', '+44 7777 602125'],
+            ['Contact', '0 7777 602125'],
           ].map(([label, phone]) => (
             <div key={phone}>
               <dt className="font-semibold text-sky-950">{label}</dt>
