@@ -5,7 +5,7 @@ import { Container } from '@/components/Container'
 import { FadeIn } from '@/components/FadeIn'
 import { PageIntro } from '@/components/PageIntro'
 import { SocialMedia } from '@/components/SocialMedia'
-import { ContactForm } from './contact-form'
+import { ContactForm } from './feedback-form'
 
 
 
@@ -72,14 +72,14 @@ function ContactDetails() {
 }
 
 export const metadata: Metadata = {
-  title: 'Contact Us | Awning London',
+  title: 'Feedback | Awning London',
   description: 'Let’s work together. We can’t wait to hear from you. Get in touch with Awning London for all your awning needs.',
 }
 
 export default function Contact() {
   return (
     <>
-      <PageIntro eyebrow="Contact us" title="Let’s work together">
+      <PageIntro eyebrow="Feedback us" title="How feel about our service?">
         <p>We can’t wait to hear from you.</p>
       </PageIntro>
 

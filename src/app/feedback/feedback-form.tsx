@@ -6,7 +6,7 @@ import Script from 'next/script'
 export function ContactForm() {
     return (
       <div className="lg:order-last">
-        <iframe data-tally-src="https://tally.so/embed/np0Ab8?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" loading="lazy" width="100%" height="276"  title="Contact form
+        <iframe data-tally-src="https://tally.so/embed/31y4Zg?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" loading="lazy" width="100%" height="276"  title="Contact form
         "></iframe>
         
       <Script
@@ -18,6 +18,10 @@ export function ContactForm() {
               Tally.loadEmbeds();
           }}
       />
+  
       </div>
     )
   }
+
+
+  
