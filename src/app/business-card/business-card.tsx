@@ -14,7 +14,7 @@ export default function Component() {
   }
 
   return (
-    <div className="flex items-center justify-center min-h-screen bg-gradient-to-br from-slate-100 to-slate-200 p-4">
+    <div className="flex items-center justify-center p-28">
       <div className="perspective-1000">
         <div
           className={`relative w-80 h-96 cursor-pointer transition-transform duration-700 transform-style-preserve-3d ${
@@ -30,9 +30,6 @@ export default function Component() {
               <div className="flex-1">
                 <h1 className="text-2xl font-bold mb-1">Awning London</h1>
                 <p className="text-sky-700 text-sm font-medium">Stylish, Durable Awnings for London.</p>
-              </div>
-              <div className="bg-white/20 backdrop-blur-sm rounded-lg p-1">
-                <LogoV2/>
               </div>
             </div>
             <div className="flex justify-center items-center">
