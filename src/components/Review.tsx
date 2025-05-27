@@ -36,7 +36,7 @@ const review = [
     },
     {
       "title": "perfect for my shop",
-      "desc": "I recently used Awning.London to replace the fabric on my European-style shopfront awnings, and I couldn’t be more satisfied with their work. I really appreciated the respectful and responsible attitude of the staff throughout the process. If you’re looking for expert awning services—whether motorized or manual—I highly recommend Awning.London. Truly top-notch service from start to finish! ⭐⭐⭐⭐⭐",
+      "desc": "I recently used Awning.London to replace the fabric on my European-style shopfront awnings, and I couldn’t be more satisfied with their work. I really appreciated the respectful and responsible attitude of the staff throughout the process.",
       "from": "hkhoshkenar",
       "review": "⭐⭐⭐⭐⭐"
     },
