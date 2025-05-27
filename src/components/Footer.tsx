@@ -31,6 +31,8 @@ const navigation = [
       { title: 'Process', href: '/installation-process' },
       { title: 'Fix & Repair', href: '/fix-repair' },
       { title: 'Color & Palette', href: '/color-palette' },
+      { title: 'Feedback', href: '/feedback' },
+      { title: 'Business Card', href: '/business-card' },
     ],
   },
   {
