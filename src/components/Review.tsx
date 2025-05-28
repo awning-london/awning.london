@@ -64,6 +64,18 @@ const review = [
       "from": "Alex",
       "review": "⭐⭐⭐⭐⭐"
     },
+    {
+      "title": "Best Exprience",
+      "desc": "They are best, Quick, Affordable price",
+      "from": "alireza",
+      "review": "⭐⭐⭐⭐⭐"
+    },
+    {
+      "title": "Recommend",
+      "desc": "The quality 👌, As someone who has used the service, I recommend it to others, they are the best.",
+      "from": "mohsenhzadeh",
+      "review": "⭐⭐⭐⭐⭐"
+    },
   ]
 
 export default function Review() {
