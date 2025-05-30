@@ -1,4 +1,5 @@
 import { FadeIn } from "@/components/FadeIn";
+import { type Metadata } from 'next'
 import { PageIntro } from "@/components/PageIntro";
 import { getWork, getAllWorkIds } from "@/lib/work";
 import { notFound } from "next/navigation";
@@ -16,6 +17,12 @@ export async function generateStaticParams() {
   return workIds.map((id) => ({ id }));
 }
 
+export const metadata: Metadata = {
+  title: 'Our Work | Awning London',
+  description:
+    'Explore our portfolio of successful projects, showcasing our expertise in creating functional and stylish awnings for a wide range of clients.',
+}
+
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 export default async function WorkPage(props: any) {
   const { id } = await Promise.resolve(props.params);
@@ -24,49 +31,6 @@ export default async function WorkPage(props: any) {
   if (!work) {
     notFound();
   }
-
-const review = [
-    {
-      "title": "The quality 👌",
-      "desc": "The custom awning transformed our patio! It provides great shade, and the quality is outstanding. Highly recommend!",
-      "from": "Mohsen, hzadeh",
-      "review": "⭐⭐⭐⭐⭐",
-      "img": "/images/review1.jpg",
-      "email": "mohsenhzadeh@gamil.com"
-    },
-    {
-      "title": "Perfect Addition to Our Home!",
-      "desc": "They are best, Quick, Quality and cheap ",
-      "from": "Alireza, paniran",
-      "review": "⭐⭐⭐⭐⭐",
-      "img": "/images/review1.jpg",
-      "email": "alireza.paniran@yahoo.co.uk"
-    },
-    {
-      "title": "Amazing service with beautiful canopy ",
-      "desc": "The custom awning transformed our patio! It provides great shade, and the quality is outstanding. Highly recommend!",
-      "from": "tazkhan",
-      "review": "⭐⭐⭐⭐⭐",
-      "img": "/images/review1.jpg",
-      "email": "tazkhan1503@yahoo.co.uk"
-    },
-    {
-      "title": "Excellent Service from Awning.London!",
-      "desc": "Excellent Service from Awning.London! I recently used Awning.London to replace the fabric on my European-style shopfront awnings, and I couldn’t be more satisfied with their work. The team was highly professional and efficient. They replaced the old fabric with high-quality new material, serviced the motor, and upgraded the faulty arms with durable chain-operated ones. Everything was done with great attention to detail and cleanliness. The installation was quick, smooth, and handled with real care. I really appreciated the respectful and responsible attitude of the staff throughout the process.",
-      "from": "Hosein Keshtkar",
-      "review": "⭐⭐⭐⭐⭐",
-      "img": "/images/review1.jpg",
-      "email": "m.hossin.keshtkar@gmail.com"
-    },
-    {
-      "title": "Recommended!",
-      "desc": "number one job",
-      "from": "Ali ayubi",
-      "review": "⭐⭐⭐⭐⭐",
-      "img": "/images/review1.jpg",
-      "email": "aliayubi500@gmail.com"
-    },
-]
 
 
   return (
@@ -101,7 +65,22 @@ const review = [
       <section className="my-10">
         <SectionIntro 
           eyebrow=""
-          title="What we did">
+          title="What do they say about us?">
+          <span className="font-bold">
+            {work.reviewTitle}
+          </span>
+          <p className="italic">
+            &quot;{work.reviewDesc}&quot;
+          </p>
+          <span>
+            {work.score}
+          </span>
+        </SectionIntro>
+      </section>
+      <section className="my-10">
+        <SectionIntro 
+          eyebrow=""
+          title="what ">
           <TagList>
             {work.benefit.map((item, index) => (
               <TagListItem key={index}>{item}</TagListItem>

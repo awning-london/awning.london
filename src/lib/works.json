@@ -24,7 +24,13 @@
             "/work/fixed-awning/4.jpg",
             "/work/fixed-awning/5.jpg",
             "/work/fixed-awning/6.jpg"
-        ]
+        ],
+        "reviewTitle": "The quality 👌",
+        "reviewDesc": "The custom awning transformed our patio! It provides great shade, and the quality is outstanding. Highly recommend!",
+        "from": "Mohsen, hzadeh",
+        "score": "⭐⭐⭐⭐⭐",
+        "reviewImg": "/images/review1.jpg",
+        "email": "mohsenhzadeh@gamil.com"
     },
     {
         "id": "manual-awning",
@@ -47,7 +53,13 @@
         "imgurl": [
             "/work/manual-awning/a3.jpg",
             "/work/manual-awning/a4.jpg"
-        ]
+        ],
+        "reviewTitle": "Perfect Addition to Our Home!",
+        "reviewDesc": "They are best, Quick, Quality and cheap ",
+        "from": "Alireza, paniran",
+        "score": "⭐⭐⭐⭐⭐",
+        "reviewImg": "/images/review1.jpg",
+        "email": "alireza.paniran@yahoo.co.uk"
     },
     {
         "id": "retractable-awning",
@@ -71,7 +83,13 @@
             "/work/retractable-awning/a1.jpg",
             "/work/retractable-awning/a2.jpg",
             "/work/retractable-awning/a6.jpg"
-        ]
+        ],
+        "reviewTitle": "Amazing service with beautiful canopy ",
+        "reviewDesc": "The custom awning transformed our patio! It provides great shade, and the quality is outstanding. Highly recommend!",
+        "from": "tazkhan",
+        "score": "⭐⭐⭐⭐⭐",
+        "reviewImg": "/images/review1.jpg",
+        "email": "tazkhan1503@yahoo.co.uk"
     },
     {
         "id": "motorized-awning",
@@ -93,7 +111,13 @@
         ],
         "imgurl": [
             "/work/motorized-awning/a15.jpg"
-        ]
+        ],
+        "reviewTitle": "Excellent Service from Awning.London!",
+        "reviewDesc": "Excellent Service from Awning.London! I recently used Awning.London to replace the fabric on my European-style shopfront awnings, and I couldn’t be more satisfied with their work. The team was highly professional and efficient. They replaced the old fabric with high-quality new material, serviced the motor, and upgraded the faulty arms with durable chain-operated ones. Everything was done with great attention to detail and cleanliness. The installation was quick, smooth, and handled with real care. I really appreciated the respectful and responsible attitude of the staff throughout the process.",
+        "from": "Hosein Keshtkar",
+        "score": "⭐⭐⭐⭐⭐",
+        "reviewImg": "/images/review1.jpg",
+        "email": "m.hossin.keshtkar@gmail.com"
     },
     {
         "id": "restaurant-awning",
@@ -115,6 +139,12 @@
         ],
         "imgurl": [
             "/work/restaurant-awning/3.jpg"
-        ]
+        ],
+        "reviewTitle": "Recommended!",
+        "reviewDesc": "number one job",
+        "from": "Ali ayubi",
+        "score": "⭐⭐⭐⭐⭐",
+        "reviewImg": "/images/review1.jpg",
+        "email": "aliayubi500@gmail.com"
     }
 ]

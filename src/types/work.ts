@@ -7,4 +7,10 @@ export interface Work {
     benefit: string[]
     featured: string[]
     imgurl: string[]
+    reviewTitle: string
+    reviewDesc: string
+    from: string
+    score: string
+    reviewImg: string
+    email: string
   }
