@@ -72,9 +72,17 @@ export default async function WorkPage(props: any) {
           <p className="italic">
             &quot;{work.reviewDesc}&quot;
           </p>
-          <span>
-            {work.score}
-          </span>
+          <div className="flex justify-start items-center gap-4">
+            <Image 
+            src={work.reviewImg} 
+            className="rounded-full"
+            width={40} 
+            height={40} 
+            alt="customer"/>
+            <span>
+              {work.score}
+            </span>
+          </div>
         </SectionIntro>
       </section>
       <section className="my-10">
