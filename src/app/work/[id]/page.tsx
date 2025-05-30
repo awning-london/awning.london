@@ -25,6 +25,49 @@ export default async function WorkPage(props: any) {
     notFound();
   }
 
+const review = [
+    {
+      "title": "The quality 👌",
+      "desc": "The custom awning transformed our patio! It provides great shade, and the quality is outstanding. Highly recommend!",
+      "from": "Mohsen, hzadeh",
+      "review": "⭐⭐⭐⭐⭐",
+      "img": "/images/review1.jpg",
+      "email": "mohsenhzadeh@gamil.com"
+    },
+    {
+      "title": "Perfect Addition to Our Home!",
+      "desc": "They are best, Quick, Quality and cheap ",
+      "from": "Alireza, paniran",
+      "review": "⭐⭐⭐⭐⭐",
+      "img": "/images/review1.jpg",
+      "email": "alireza.paniran@yahoo.co.uk"
+    },
+    {
+      "title": "Amazing service with beautiful canopy ",
+      "desc": "The custom awning transformed our patio! It provides great shade, and the quality is outstanding. Highly recommend!",
+      "from": "tazkhan",
+      "review": "⭐⭐⭐⭐⭐",
+      "img": "/images/review1.jpg",
+      "email": "tazkhan1503@yahoo.co.uk"
+    },
+    {
+      "title": "Excellent Service from Awning.London!",
+      "desc": "Excellent Service from Awning.London! I recently used Awning.London to replace the fabric on my European-style shopfront awnings, and I couldn’t be more satisfied with their work. The team was highly professional and efficient. They replaced the old fabric with high-quality new material, serviced the motor, and upgraded the faulty arms with durable chain-operated ones. Everything was done with great attention to detail and cleanliness. The installation was quick, smooth, and handled with real care. I really appreciated the respectful and responsible attitude of the staff throughout the process.",
+      "from": "Hosein Keshtkar",
+      "review": "⭐⭐⭐⭐⭐",
+      "img": "/images/review1.jpg",
+      "email": "m.hossin.keshtkar@gmail.com"
+    },
+    {
+      "title": "Recommended!",
+      "desc": "number one job",
+      "from": "Ali ayubi",
+      "review": "⭐⭐⭐⭐⭐",
+      "img": "/images/review1.jpg",
+      "email": "aliayubi500@gmail.com"
+    },
+]
+
 
   return (
     <>
