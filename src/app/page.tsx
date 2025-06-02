@@ -161,8 +161,6 @@ export default async function Home() {
       <Clients />
       <Services />
       <Review />
-      <FixLink />
-
       <SectionIntro
                 eyebrow="Our Color & Palette"
                 title="Try what Color fit to your Awning"
@@ -176,6 +174,8 @@ export default async function Home() {
           </Button>
         </SectionIntro>
       <PaletteSwiper />
+      <FixLink />
+
       
       <ContactSection />
       <ScrollButton />
