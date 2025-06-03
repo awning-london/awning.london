@@ -1,6 +1,7 @@
 export interface Work {
     id: string
     title: string
+    metaWork: string
     desc: string
     btnTitle: string
     overview: string

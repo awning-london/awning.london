@@ -133,9 +133,13 @@ function Navigation() {
         <NavigationItem href="/about">About Us</NavigationItem>
       </NavigationRow>
       <NavigationRow>
-        <NavigationItem href="/serives">Services</NavigationItem>
+        <NavigationItem href="/services">Services</NavigationItem>
         <NavigationItem href="/installation-process">Process</NavigationItem>
       </NavigationRow>
+      {/* <NavigationRow>
+          <NavigationItem href="/color-palette">Color & Palette</NavigationItem>
+          <NavigationItem href="/feedback">Feedback</NavigationItem>
+      </NavigationRow> */}
     </nav>
   )
 }
