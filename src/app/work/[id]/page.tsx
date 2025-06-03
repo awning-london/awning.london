@@ -1,5 +1,4 @@
 import { FadeIn } from "@/components/FadeIn";
-import { type Metadata } from 'next'
 import { PageIntro } from "@/components/PageIntro";
 import { getWork, getAllWorkIds } from "@/lib/work";
 import { notFound } from "next/navigation";
@@ -17,17 +16,24 @@ export async function generateStaticParams() {
   return workIds.map((id) => ({ id }));
 }
 
-export const metadata: Metadata = {
-  title: 'Our Work | Awning London',
-  description:
-    'Explore our portfolio of successful projects, showcasing our expertise in creating functional and stylish awnings for a wide range of clients.',
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+export async function generateMetadata(props: any) {
+  const { id } = await Promise.resolve(props.params);
+  const work = await getWork(id);
+  if (!work) {
+    notFound();
+  }
+
+  return {
+    title: work.metaWork || 'Default Title',
+    description: 'Explore our portfolio of successful projects, showcasing our expertise in creating functional and stylish awnings for a wide range of clients.',
+  };
 }
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 export default async function WorkPage(props: any) {
   const { id } = await Promise.resolve(props.params);
   const work = await getWork(id);
-
   if (!work) {
     notFound();
   }
