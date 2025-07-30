@@ -1,0 +1,56 @@
+[
+    {
+        "id": "out-door-awning",
+        "href": "blog/out-door-awning",
+        "date": "2024 july 15",
+        "title": "Outdoor Awning Installations in London",
+        "metaWork": "Outdoor Awning Installations in London",
+        "desc": "Our outdoor awning installations across London provide stylish and functional solutions for residential and commercial properties.",
+        "heading1": "why you should out door awning",
+        "desc1": "Explore our diverse range of outdoor awnings designed to enhance your outdoor spaces. From fixed to retractable options, we offer solutions that combine style and functionality.",
+        "image1": "/blog/fixed.jpg",
+        "optionheader": "type of outdoor awnings",
+        "optiondesc": [
+            "Fixed Awnings",
+            "Retractable Awnings",
+            "Manual Awnings",
+            "Motorized Awnings"
+        ],
+        "heading2": "Why Choose Outdoor Awnings?",
+        "desc2": "Outdoor awnings not only provide shade and protection from the elements but also enhance the aesthetic appeal of your property. They are perfect for patios, balconies, and commercial spaces, offering both comfort and style.",
+        "heading3": "Benefits of Outdoor Awnings",
+        "desc3": [
+            "Protection from UV rays",
+            "Increased outdoor living space",
+            "Enhanced property value"
+        ],
+        "image2": ""
+    },
+    {
+        "id": "this-is-test",
+        "href": "blog/out-door-awning",
+        "date": "2024-01-15",
+        "title": "Outdoor Awning Installations in London – Real-Life Project Success Stories",
+        "metaWork": "Outdoor Awning Installations in London",
+        "desc": "Our outdoor awning installations across London provide stylish and functional solutions for residential and commercial properties.",
+        "heading1": "Type of outdoor Awnings",
+        "desc1": "Explore our diverse range of outdoor awnings designed to enhance your outdoor spaces. From fixed to retractable options, we offer solutions that combine style and functionality.",
+        "image1": "",
+        "optionheader": "type of outdoor awnings",
+        "optiondesc": [
+            "Fixed Awnings",
+            "Retractable Awnings",
+            "Manual Awnings",
+            "Motorized Awnings"
+        ],
+        "heading2": "Why Choose Outdoor Awnings?",
+        "desc2": "Outdoor awnings not only provide shade and protection from the elements but also enhance the aesthetic appeal of your property. They are perfect for patios, balconies, and commercial spaces, offering both comfort and style.",
+        "heading3": "Benefits of Outdoor Awnings",
+        "desc3": [
+            "Protection from UV rays",
+            "Increased outdoor living space",
+            "Enhanced property value"
+        ],
+        "image2": ""
+    }
+]

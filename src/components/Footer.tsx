@@ -57,8 +57,8 @@ const navigation = [
   {
     title: 'Blog',
     links: [
-      { title: 'Best Choice', href: '/blog/best-awnings-for-homes' },
-      { title: 'Which one is better?', href: '/blog/retractable-vs-fixed-awnings' },
+      { title: 'Best Choice', href: '/best-awnings-for-homes' },
+      { title: 'Which one is better?', href: '/retractable-vs-fixed-awnings' },
     ],
   },
   {
