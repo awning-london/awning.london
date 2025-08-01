@@ -15,7 +15,7 @@ import { urlFor } from "@/sanity/lib/image";
 
 export async function generateStaticParams() {
   const blogIds = await getAllBlogIds();
-  return blogIds.map((id: string) => ({ id }));
+  return blogIds.map((id: string) => ({ slug: id }));
 }
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
