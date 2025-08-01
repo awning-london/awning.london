@@ -3,16 +3,16 @@
 const isGitHubPages = process.env.GITHUB_ACTIONS === 'true';
 const nextConfig = {
     output: 'export',
-    async redirects() {
-        return isGitHubPages
-        ? [
-            {
-                source: '/sudio/:path*',
-                destination: '/',
-                permanent: false,
-            },
-            ]
-        : [];
+    async rewrites() {
+        if (isGitHubPages) {
+        return [];
+        }
+        return [
+        {
+            source: '/sudio/:path*',
+            destination: '/sudio', // handled only outside GH Pages
+        },
+        ];
     },
     images: {
         remotePatterns: [
@@ -26,4 +26,4 @@ const nextConfig = {
     }
 };
 
-export default nextConfig;
+module.exports = nextConfig;
