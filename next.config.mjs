@@ -1,5 +1,19 @@
 /** @type {import('next').NextConfig} */
+
+const isGitHubPages = process.env.GITHUB_ACTIONS === 'true';
 const nextConfig = {
+    output: 'export',
+    async redirects() {
+        return isGitHubPages
+        ? [
+            {
+                source: '/sudio/:path*',
+                destination: '/',
+                permanent: false,
+            },
+            ]
+        : [];
+    },
     images: {
         remotePatterns: [
             {
