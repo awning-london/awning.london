@@ -15,5 +15,4 @@ export interface Blog {
     heading3: string
     desc3: string[]
     image2: string
-
   }
