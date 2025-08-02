@@ -2,10 +2,8 @@ import { type Metadata } from 'next'
 import { ContactSection } from '@/components/ContactSection'
 import { Container } from '@/components/Container'
 import { PageIntro } from '@/components/PageIntro'
-import Image from 'next/image'
-import { SectionIntro } from '@/components/SectionIntro'
-import { Button } from '@/components/Button'
 import works from "@/lib/works.json";
+import WorkCard from '@/components/WorkCard'
 
 export const metadata: Metadata = {
   title: 'Our Work | Awning London',
@@ -28,31 +26,13 @@ export default async function Work() {
         </p>
       </PageIntro>
 
-      <Container className='flex justify-center items-center text-center md:text-left'>
-        {works.map(caseStudy => (
-            <div key={caseStudy.id} className='flex justify-between items-center my-20 pb-5 md:flex-row flex-col border-b border-sky-600'>
-              <Image
-                src={caseStudy.imgurl[0]}
-                className='rounded-4xl'
-                width={300}
-                height={300}
-                alt='work' />
-              <SectionIntro
-                title={caseStudy.title}
-                className="mt-10 sm:mt-12 md:mt-18"
-              >
-                <p>
-                  {caseStudy.desc}
-                </p>
-                <Button href={`/work/${caseStudy.id}`} invert={false} className='mt-5'>
-                  {caseStudy.btnTitle}
-                </Button>
-              </SectionIntro>
-            </div>
-
-        ))}
+      <Container className="my-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {works.map((casestudy) => (
+              <WorkCard key={casestudy.id} work={casestudy} />
+            ))}
+        </div>
       </Container>
-
       <ContactSection />
     </>
   )
