@@ -94,7 +94,7 @@ export default async function WorkPage(props: any) {
       <section className="my-10">
         <SectionIntro 
           eyebrow=""
-          title="what ">
+          title="Benefit of Use">
           <TagList>
             {work.benefit.map((item, index) => (
               <TagListItem key={index}>{item}</TagListItem>

@@ -2,8 +2,8 @@ import { type Metadata } from 'next'
 import { ContactSection } from '@/components/ContactSection'
 import { Container } from '@/components/Container'
 import { PageIntro } from '@/components/PageIntro'
-import works from "@/lib/works.json";
 import WorkCard from '@/components/WorkCard'
+import { getWorks } from "@/lib/work";
 
 export const metadata: Metadata = {
   title: 'Our Work | Awning London',
@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 }
 
 export default async function Work() {
-  
+  const works = await getWorks();
   return (
     <>
       <PageIntro
