@@ -2,8 +2,13 @@ import { getBlogs } from "@/lib/blog";
 import BlogCard from "@/components/BlogCard";
 import { PageIntro } from "@/components/PageIntro";
 import { Container } from "@/components/Container";
+import { type Metadata } from 'next'
 
-
+export const metadata: Metadata = {
+  title: 'Blogs | Awning London',
+  description:
+    'Discover expert tips, in-depth guides, and the latest trends on our blog. Stay informed with high-quality, engaging content designed to inspire and help you succeed.',
+}
 
 export default async function BlogPage() {
   const blogs = await getBlogs();
