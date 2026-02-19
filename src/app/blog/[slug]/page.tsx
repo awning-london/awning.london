@@ -6,12 +6,10 @@ import { ContactSection } from "@/components/ContactSection";
 import ScrollButton from "@/components/ScrollButton";
 import { getBlog, getAllBlogIds } from "@/lib/blog";
 import Image from "next/image";
-
 import { TiTick } from "react-icons/ti";
 import clsx from "clsx";
 import { Container } from "@/components/Container";
 import { StylizedImage } from "@/components/StylizedImage";
-import { urlFor } from "@/sanity/lib/image";
 
 export async function generateStaticParams() {
   const blogIds = await getAllBlogIds();
@@ -52,7 +50,7 @@ export default async function BlogPage(props: any) {
           <Image
             width={400}
             height={200}
-            src={urlFor(blog.image1).width(800).url()}
+            src={blog.image1}
             alt={"awning blog"}
             className='block h-full w-full object-cover rounded-4xl md:h-96'
           />
@@ -70,7 +68,7 @@ export default async function BlogPage(props: any) {
         <div className="flex justify-center lg:w-1/2 lg:justify-end lg:pr-12">
           <FadeIn className="w-[25rem] md:w-[33.75rem] flex-none lg:w-[45rem]">
             <StylizedImage
-              src={urlFor(blog.image1).width(800).url()}
+              src={blog.image1}
               width={200}
               height={400}
               sizes="(min-width: 1024px) 41rem, 31rem"
@@ -94,7 +92,7 @@ export default async function BlogPage(props: any) {
         <div className="flex justify-center lg:w-1/2 lg:justify-end lg:pr-12">
           <FadeIn className="w-[25rem] md:w-[33.75rem] flex-none lg:w-[45rem]">
             <StylizedImage
-              src={urlFor(blog.image2).width(800).url()}
+              src={blog.image2}
               width={200}
               height={400}
               sizes="(min-width: 1024px) 41rem, 31rem"

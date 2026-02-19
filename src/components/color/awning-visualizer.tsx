@@ -11,16 +11,18 @@ type ColorInfo = {
 
 export default function AwningVisualizer() {
   const searchParams = useSearchParams()
-  const [awningColor, setAwningColor] = useState<string>("#E63946")
   const [colorInfo, setColorInfo] = useState<ColorInfo>({
     type: "solid",
     colors: ["#E63946"],
   })
 
-  useEffect(() => {
-    const color = searchParams.get("color") || awningColor
+  const DEFUALT_COLOR = "Red"
 
-    setAwningColor(color)
+  useEffect(() => {
+    const paramColor = searchParams.get("color")
+    const color = paramColor ?? DEFUALT_COLOR
+
+    // setAwningColor(color)
 
     if (color.startsWith("stripe:")) {
       const parts = color.split(":")

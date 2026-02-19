@@ -3,7 +3,7 @@ export interface Work {
     title: string
     metaWork: string
     desc: string
-    btnTitle: string
+    btnTitle?: string | undefined
     overview: string
     benefit: string[]
     featured: string[]
